@@ -1,2 +1,2 @@
 # Tenko
-Tenko
+talenko
