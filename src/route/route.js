@@ -26,9 +26,11 @@ const Routes = () => {
   return (
 
     <>
-     {open && <Menu open={open} handleOpen={handelClick}/>}
+    
+
     <Router>
       {/*  <ScrollToTop /> */}
+      {open && <Menu open={open} handleOpen={handelClick}/>}
       <Layout>
        
 

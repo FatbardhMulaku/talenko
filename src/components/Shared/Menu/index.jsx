@@ -1,27 +1,33 @@
-import { Link } from '@material-ui/core'
 import React from 'react'
+import { Route } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const link = [
-    {name: "Home", link:"/"},
-    {name: "Services", link:"/Services"},
-    {name: "Work", link:"/Work"},
-    {name: "Agency", link:"/Agency"},
-    {name: "Contact", link:"/Contact"}
+    { name: "Home", link: "" },
+    { name: "Services", link: "Services" },
+    { name: "Work", link: "Work" },
+    { name: "Agency", link: "Agency" },
+    { name: "Contact", link: "Contact" }
 ]
 
 
 
 function index(props) {
-    console.log(props.handleOpen)
+
     return (
         <div className="FullMenu flex justify-center items-center">
-            {props.open && <spna to="#" onClick={props.handleOpen} className="FullMenu__close">X</spna>}
+            {props.open && <spna to="#" onClick={props.handleOpen} className="FullMenu__close">&#10006;</spna>}
             <div className="FullMenu__wrapper">
-            {link.map((item, index) => {
-                return(
-                    <a className="FullMenu__item" href={item.link} key={index}>{item.name}</a>
-                )
-            })}
+
+
+                {link.map((item, index) => {
+                    return (
+                        <Link className="FullMenu__item" onClick={props.handleOpen} to={`/${item.link}`} key={index}>{item.name}</Link>
+                    )
+                })}
+
+
+
             </div>
         </div>
     )
