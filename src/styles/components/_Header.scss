@@ -1,0 +1,20 @@
+.Header{
+    &__btn{
+/*         background-image: url("../../assets/Path16.svg");
+        background-position: center;
+        padding: 5px;
+        background-size: contain; */
+        cursor: pointer;
+        transition: 0.5s ease-in all;
+        &:hover{
+            stroke: #F24200 ;
+        }
+        &:hover path{
+            stroke: #F24200;
+        }
+        @include respond(md){
+            width:109px;
+            height:30px;
+        }
+    }
+}

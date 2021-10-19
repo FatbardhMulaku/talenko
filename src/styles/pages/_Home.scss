@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "myFont";
+  src: url("../../assets/font/ClashDisplay-Regular_0.otf") format("otf");
+}
+.Home {
+  &__hero {
+    padding: 100px 0;
+    & > svg {
+      @include xauto;
+      margin-top: 60px;
+      @include respond(md){
+        margin-top: 10px;
+      }
+      &:first-child {
+       
+      }
+    }
+    & > h1 {
+      color: #fff !important;
+      text-align: center;
+      font-size: 55px;
+      @include respond(md) {
+        font-size: 20px;
+      }
+    }
+    &>p {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 60px;
+      @include xauto;
+      @include respond(md) {
+        font-size: 16px;
+      }
+    }
+    &>div:last-child{
+        margin-top: 100px;
+        @include respond(md){
+          margin-top: 30px;
+        }
+        &>p{
+            font-size: 18px;
+        }
+    }
+  }
+  &__Service{
+    background-color: black;
+    color: white;
+    padding: 0 40px;
+    &--icon{
+      background-image: url("../../assets/Home/Path19.svg");
+      height: 23px;
+      width: 23px;
+    }
+    h5{
+      margin-left: -4px;
+      margin-bottom: 30px;
+      @include respond(md){
+        margin-bottom: 20px;
+      }
+    }
+    h2{
+      font-size: 40px;
+      @include respond(md){
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+    }
+    &>div>div:last-child{
+      a{
+        height: fit-content;
+        @include yauto;
+      }
+    }
+    &>div>div:last-child>div:last-child{
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+      @include respond(md){
+        display: flex;
+        width: fit-content;
+        @include xauto;
+       
+      }
+    }
+  }
+}

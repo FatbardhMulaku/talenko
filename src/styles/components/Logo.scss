@@ -1,0 +1,27 @@
+.logo {
+  height: 40px;
+  width: 95px;
+  display: block;
+  background-image: url("../../assets/FullLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+  @media screen and (max-width: 1200px) {
+      height: 35px;
+      width: 110px;
+     
+      height: 30px;
+      width: 73px;
+  }
+  @media screen and (max-width: 600px) {
+      
+  }
+  &.white {
+    /* background-image: url("../../../Assets/Logo-white.png"); */
+    width: 234px;
+    height: 64px;
+  }
+ 
+  
+}

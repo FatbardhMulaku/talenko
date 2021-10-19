@@ -1,0 +1,44 @@
+.FullMenu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    z-index: 50000;
+    transition: 0.3s ease-in all;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 30px;
+        transition: 0.4s ease-in all;
+        margin: 10px 0;
+        color: white;
+        border-bottom: 2px solid transparent;
+        width: 80%;
+        font-size: 60px;
+        padding: 10px;
+        &:hover{
+            transform: scale(1.2);
+            border-color: white;
+        }
+        @include respond(md){
+            width: 95%;
+            font-size: 30px;
+        }
+    }
+    &__close{
+        font-size: 50px;
+        position: fixed;
+        top: 47vh;
+        right: 25px;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s ease-in all;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
