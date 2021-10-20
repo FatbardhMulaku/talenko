@@ -13,6 +13,7 @@ import Services from "../pages/Services";
 import Menu from "../components/Shared/Menu/index";
 import Work from "../pages/Work";
 import Agency from "../pages/Agency";
+import Contact from "../pages/Contact";
 
 
 const Routes = () => {
@@ -24,10 +25,7 @@ const Routes = () => {
   }
 
   return (
-
     <>
-    
-
     <Router>
       {/*  <ScrollToTop /> */}
       {open && <Menu open={open} handleOpen={handelClick}/>}
@@ -49,6 +47,7 @@ const Routes = () => {
           <Route path="/Services" exact render={() => <Services />} />
           <Route path="/Work" exact render={() => <Work />} />
           <Route path="/Agency" exact render={() => <Agency />} />
+          <Route path="/Contact" exact render={() => <Contact />} />
 
 
           <Route path="/404" render={() => <PageNotFound />} />

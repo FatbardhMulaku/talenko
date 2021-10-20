@@ -11,6 +11,9 @@
     justify-content: flex-end;
     align-items: center;
     position: absolute;
+   /*  @include respond(md){
+        width: 95vw;
+    } */
     &__icon{
         position: fixed;
         display: block !important;
@@ -26,4 +29,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+@include respond(md){
+    .slick-slider > button {
+        display: none !important;
+    }
 }

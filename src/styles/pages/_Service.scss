@@ -1,0 +1,61 @@
+.Service {
+  &__hero {
+    background-image: linear-gradient(to right, #00000093, #00000093),
+      url("../../assets/Services/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg");
+  }
+  &-Cards {
+    display: flex;
+    flex-direction: column;
+    &__box {
+      background-image: url("../../assets/Home/grain.jpg");
+      padding: 30px 50px;
+      margin: 70px auto;
+      @include respond(md){
+        margin: 30px auto;
+        padding: 20px;
+      }
+      h5 {
+        display: flex;
+        border-bottom: 1px solid white;
+        padding-bottom: 30px;
+        font-size: 25px;
+      }
+    }
+    &A1{
+        background-image: url("../../assets/Services/phone-mockup.png");
+        width: 500px;
+        height: 450px;
+        @include respond(sm){
+            width: 310px;
+            height: 300px;
+        }
+    }
+    &A2{
+        background-image: url("../../assets/Services/llaptopi2.png");
+        width: 500px;
+        height: 450px;
+        @include respond(sm){
+            width: 320px;
+            height: 300px;
+        }
+    }
+    &A3{
+        background-image: url("../../assets/Services/isnta.png");
+        width: 500px;
+        height: 450px;
+        @include respond(sm){
+            width: 320px;
+            height: 300px;
+        }
+    }
+    &A4{
+        background-image: url("../../assets/Services/Business.png");
+        width: 500px;
+        height: 450px;
+        @include respond(sm){
+            width: 320px;
+            height: 300px;
+        }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Buttons from '../Shared/Button/Buttons'
 import Diver from '../Shared/Divider'
 import Fade from 'react-reveal/Fade';
+import ServiceSlider from './ServiceSlider';
 
 function Service() {
     return (
@@ -13,11 +14,11 @@ function Service() {
                 </div>
                 <Diver width="100%" color="white" />
                 <div className="flex flex-col justify-center md:flex-row md:justify-between mt-4 mt-10">
-                    <Fade left big >
+                    <Fade left  >
                         <h2 className="my-auto">You can count on us for <br />
                             a wide range of needs</h2>
                     </Fade>
-                    <Fade right big className="my-auto">
+                    <Fade right className="my-auto">
                     <Buttons
                         name="See All"
                         link="/Service"
@@ -25,7 +26,13 @@ function Service() {
                     />
                     </Fade>
                 </div>
-            </div>
+                
+
+                <ServiceSlider />
+                </div>
+           
+
+            
 
         </div>
     )

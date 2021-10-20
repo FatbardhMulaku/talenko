@@ -8,11 +8,10 @@
     & > svg {
       @include xauto;
       margin-top: 60px;
-      @include respond(md){
+      @include respond(md) {
         margin-top: 10px;
       }
       &:first-child {
-       
       }
     }
     & > h1 {
@@ -23,7 +22,7 @@
         font-size: 20px;
       }
     }
-    &>p {
+    & > p {
       color: white;
       font-size: 20px;
       text-align: center;
@@ -33,55 +32,215 @@
         font-size: 16px;
       }
     }
-    &>div:last-child{
-        margin-top: 100px;
-        @include respond(md){
-          margin-top: 30px;
-        }
-        &>p{
-            font-size: 18px;
-        }
+    & > div:last-child {
+      margin-top: 100px;
+      @include respond(md) {
+        margin-top: 30px;
+      }
+      & > p {
+        font-size: 18px;
+      }
     }
   }
-  &__Service{
+  &__Service {
     background-color: black;
     color: white;
     padding: 0 40px;
-    &--icon{
+    &--icon {
       background-image: url("../../assets/Home/Path19.svg");
       height: 23px;
       width: 23px;
     }
-    h5{
+    h5 {
       margin-left: -4px;
       margin-bottom: 30px;
-      @include respond(md){
+      @include respond(md) {
         margin-bottom: 20px;
       }
     }
-    h2{
+    h2 {
       font-size: 40px;
-      @include respond(md){
+      @include respond(md) {
         text-align: center;
         font-size: 18px;
         margin-bottom: 25px;
       }
     }
-    &>div>div:last-child{
-      a{
+    & > div > div:last-child {
+      a {
         height: fit-content;
         @include yauto;
       }
     }
-    &>div>div:last-child>div:last-child{
+    & > div > div:nth-child(3) > div:last-child {
       margin-top: auto !important;
       margin-bottom: auto !important;
-      @include respond(md){
+      @include respond(md) {
         display: flex;
         width: fit-content;
         @include xauto;
-       
       }
     }
+  }
+}
+
+.ServiceSlider {
+  margin-top: 80px;
+  background-image: linear-gradient(to right, #00000060, #00000060),
+    url("../../assets/Home/grain.jpg");
+  padding: 0 0 120px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  @include respond(md) {
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+  &__box {
+    margin: 10px 10px;
+    /*   width: 400px !important; */
+    transition: 0.4s ease-in all;
+    padding: 50px;
+    padding-top: 200px;
+    @include respond(md) {
+      /*   width: 300px !important;
+      height: fit-content !important; */
+    }
+    h4 {
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 14px;
+      width: 80%;
+      @include respond(md) {
+        width: 100%;
+      }
+    }
+  }
+  &BG1,
+  &BG2,
+  &BG3,
+  &BG4 {
+    transition: 0.4s ease-in all;
+    /*     width: 100%;
+    height: 100%; */
+    z-index: 15;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include respond(md) {
+      /*  width: 300px !important;
+      height: fit-content !important; */
+    }
+    &:hover {
+      transition: 0.4s ease-in all;
+    }
+  }
+  &BG1 {
+    &:hover {
+      background-image: url("../../assets/Home/phone-mockup.png");
+      border-bottom: 1px solid rgba(255, 255, 255, 0.822);
+    }
+  }
+  &BG2 {
+    &:hover {
+      background-image: url("../../assets/Home/llaptopi2.png");
+      border-bottom: 1px solid rgba(255, 255, 255, 0.822);
+    }
+  }
+  &BG3 {
+    &:hover {
+      background-image: url("../../assets/Home/isnta.png");
+      border-bottom: 1px solid rgba(255, 255, 255, 0.822);
+    }
+  }
+  &BG4 {
+    padding-bottom: 21px;
+    &:hover {
+      background-image: url("../../assets/Home/branding.png");
+      border-bottom: 1px solid rgba(255, 255, 255, 0.822);
+    }
+  }
+}
+.slick-track {
+  width: max-content !important;
+}
+
+.HomeHero{
+  background-image: linear-gradient(to right, #00000045, #00000045),
+        url("../../assets/Home/HERO-2.jpg");
+}
+
+.HomeAboutus{
+  background-image: linear-gradient(to right, #00000042, #00000041),
+        url("../../assets/Home/Image4.jpg");
+}
+
+.Home_Contact{
+    background-image: url("../../assets/Home/grain.jpg");
+}
+
+// Home FullSlider
+.FullSlider{
+  background-image: url("../../assets/Home/grain.jpg");
+  color: white;
+  &__Box{
+    display: flex !important;
+    flex-direction: row;
+    &>div:first-child{
+      width: 40%;
+      padding: 70px 0;
+      @include yauto;
+      a{
+        border-bottom: 1px solid white;
+        transition: 0.3s ease-in all;
+        &:hover{
+          transform: translateY(-3px);
+        }
+      }
+      @include respond(md){
+        width: 90%;
+      }
+    }
+    &>div:last-child{
+      width: 59%;
+      display: flex;
+      justify-content: space-around;
+      @include respond(md){
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    @include respond(md){
+      flex-direction: column;
+    }
+  }
+  &A1, &A3{
+    background-image: url("../../assets/Home/MaskGroupM.png");
+    width: 520px;
+    height: 400px;
+    align-self: start;
+    @include respond(md){
+      width: 300px;
+      height: 200px ;
+    }
+  }
+  &A2, &A4{
+    background-image: url("../../assets/Home/phone-mockup.png");
+    width: 500px;
+    height: 400px;
+    align-self: start;
+    @include respond(md){
+      width: 300px ;
+      height: 250px ;
+    }
+  }
+  &B{
+    background-image: url("../../assets/Home/MaskGroupT.png");
+    width: 250px;
+    height: 300px;
+    align-self: flex-end;
+
   }
 }

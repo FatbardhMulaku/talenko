@@ -10,23 +10,18 @@ const link = [
     { name: "Contact", link: "Contact" }
 ]
 
-
-
 function index(props) {
 
     return (
         <div className="FullMenu flex justify-center items-center">
-            {props.open && <spna to="#" onClick={props.handleOpen} className="FullMenu__close">&#10006;</spna>}
+            {props.open && <span to="#" onClick={props.handleOpen} className="FullMenu__close">&#10006;</span>}
             <div className="FullMenu__wrapper">
-
 
                 {link.map((item, index) => {
                     return (
                         <Link className="FullMenu__item" onClick={props.handleOpen} to={`/${item.link}`} key={index}>{item.name}</Link>
                     )
                 })}
-
-
 
             </div>
         </div>

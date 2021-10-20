@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 
 function Hero() {
     return (
-        <MainHero >
+        <MainHero BGimg="HomeHero">
             <div className="Home__hero container flex flex-col my-auto">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="113.733" height="113.733" viewBox="0 0 113.733 113.733">

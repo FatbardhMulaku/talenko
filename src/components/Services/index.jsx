@@ -1,14 +1,28 @@
-import React from 'react'
+import React from 'react';
+import Contact from '../Home/Contact';
+import Hero from './Hero';
+import TextInfo from './TextInfo';
+import { sectionText } from "./data";
+import Cards from './Cards';
 
 function index() {
     return (
-        <div className="flex w-screen h-screen justify-center items-center bg-black text-white">
-            <div>
-                    <h1 className="text-4xl text-blue-400">Services Page</h1>
-                    <h2 className="text-6xl">Working...</h2>
-            </div>
-        </div>
+        <>
+            <Hero />
+            <TextInfo data={sectionText[0]} />
+            <Cards />
+            <TextInfo data={sectionText[1]} />
+            <Contact />
+        </>
     )
 }
 
 export default index
+
+
+{/* <div className="flex w-100 py-32 justify-center items-center bg-black text-white border-b-2 border-gray-800">
+            <div>
+                    
+                    <h2 className="text-6xl">Working...</h2>
+            </div>
+        </div> */}

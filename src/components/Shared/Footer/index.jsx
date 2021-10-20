@@ -23,7 +23,7 @@ function index() {
                     })}
                 </div>
             </div>
-            <div className="container flex flex-col justify-center md:flex-row md:justify-between pt-8 md:pt-24">
+            <div className="container flex flex-col justify-center md:flex-row md:justify-between pt-8 md:pt-32">
                     <p className="text-center md:text-left">© 2021 Talenko Agency. All rights reserved</p>
                     <p className="cursor-pointer mt-6 md:mt-0 text-center md:text-left">Privacy Policy</p>
             </div>

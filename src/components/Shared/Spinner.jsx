@@ -12,7 +12,7 @@ export default class Spinner extends Component {
     const { loading } = this.state;
     return (
       <div className="SpinnerLoad">
-        <FlagSpinner size={40} color="#000" loading={loading} />
+        <FlagSpinner size={40} color="#fff" loading={loading} />
       </div>
     );
   }
