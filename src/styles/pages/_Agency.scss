@@ -1,0 +1,17 @@
+.Agency{
+    &__Section2{
+        background-image: url("../../assets/Agency/Image\ 5.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size:contain;
+        @include respond(md){
+            height: 60vh;
+        }
+        @include respond(sm){
+            height: 50vh;
+        }
+        @include respond(xs){
+            height: 40vh;
+        }
+    }
+}

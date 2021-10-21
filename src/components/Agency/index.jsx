@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Aboutus from "../Home/Aboutus"
 
 function index() {
     return (
-        <div className="flex w-screen h-screen justify-center items-center bg-black text-white">
-            <div>
-                    <h1 className="text-4xl text-pink-400">Agency Page</h1>
-                    <h2 className="text-6xl">Working...</h2>
-            </div>
+        <div className="Agency">
+            <Aboutus />
+            <div className="Agency__Section2 BG"/>
         </div>
     )
 }
