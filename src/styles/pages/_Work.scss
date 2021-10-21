@@ -1,0 +1,19 @@
+.Work {
+  &__hero {
+    background-image: linear-gradient(to right, #00000093, #00000093),
+      url("../../assets/Work/grain.jpg");
+    svg{
+        transform: translate(-30px,55px);
+    }
+  }
+  &-DotAgency{
+        &__img{
+            background-image: url("../../assets/Work/car.png");
+            width: auto;
+            height: 380px;
+            @include respond(sm){
+                height: 280px;
+            }
+        }
+  }
+}
