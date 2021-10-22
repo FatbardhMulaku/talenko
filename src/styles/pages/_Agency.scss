@@ -1,17 +1,83 @@
-.Agency{
-    &__Section2{
-        background-image: url("../../assets/Agency/Image\ 5.jpg");
-        width: 100%;
-        height: 100vh;
-        background-size:contain;
-        @include respond(md){
-            height: 60vh;
-        }
-        @include respond(sm){
-            height: 50vh;
-        }
-        @include respond(xs){
-            height: 40vh;
-        }
+.Agency {
+  &__Section2 {
+    background-image: url("../../assets/Agency/Image\ 5.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    @include respond(md) {
+      height: 60vh;
     }
+    @include respond(sm) {
+      height: 50vh;
+    }
+    @include respond(xs) {
+      height: 40vh;
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img1,
+    &__img2,
+    &__img3,
+    &__img4,
+    &__img5,
+    &__img6,
+    &__img7 {
+      width: 600px;
+      height: 750px;
+      margin: 150px 10px;
+      transition: 0.3s ease-in all;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include respond(lg) {
+        width: 500px;
+        height: 650px;
+        margin: 150px 10px;
+      }
+      @include respond(sm) {
+        width: 300px;
+        height: 450px;
+        margin: 60px auto;
+      }
+    }
+    &__img1 {
+      background-image: url("../../assets/Agency/photo1.png");
+    }
+    &__img2 {
+      background-image: url("../../assets/Agency/photo2.png");
+    }
+    &__img3 {
+      background-image: url("../../assets/Agency/photo3.png");
+    }
+    &__img4 {
+      background-image: url("../../assets/Agency/photo4.png");
+    }
+    &__img5 {
+      background-image: url("../../assets/Agency/photo5.png");
+    }
+    &__img6 {
+      background-image: url("../../assets/Agency/photo6.png");
+    }
+    &__img7 {
+      background-image: url("../../assets/Agency/photo7.png");
+    }
+  }
+  &-Team {
+    & > div:first-child {
+      transform: translateY(100px);
+    }
+  }
+  &-Text {
+    margin-top: -50px;
+    padding: 80px 0;
+    background-image: url("../../assets/Home/grain.jpg");
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.105);
+    border-top: 1px solid rgba(255, 255, 255, 0.105);
+  }
 }
