@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "5px 70px",
+    padding: "6px 70px",
     alignItems: "center",
     paddingTop: "12px",
     color: 'white',
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
       padding: "5px 10px !important"
     },
     appBar: {
-      padding: "3px 0",
+      padding: "5px 0",
     },
   },
 }));
@@ -68,13 +68,8 @@ const Toolbar = (props) => {
         {/* <div className="DrawerToggle">
           <DrawerToggle clicked={props.drawerToggle} />
         </div> */}
-
         <Logo style="logo_header" />
-
-
-
         <div className="flex">
-
 
           <div className="flex searchIcon mr-4 md:mr-8 my-auto cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="23.426" height="23.424" viewBox="0 0 25.426 25.424">
@@ -89,7 +84,6 @@ const Toolbar = (props) => {
           </div>
 
           <Btn className="Header__btn" />
-
 
         </div>
 

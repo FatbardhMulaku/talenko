@@ -7,10 +7,10 @@ function Card(props) {
             {props.data.map((item, idx) => {
                 return (
                     <Fade bottom>
-                        <div className={`Agency-card__img${props.img + idx} BG flex flex-col justify-end p-12`}>
-                            <h6 className="text-2xl text-gray-400">{item.title}</h6>
-                            <h2 className="text-3xl mb-1">{item.name}</h2>
-                            <p className="text-lg mb-3">{item.desc}</p>
+                        <div className={`Agency-card__img${props.img + idx} BG flex flex-col justify-end p-6 md:p-12`}>
+                            <h6 className="md:text-lg md:text-2xl text-gray-400">{item.title}</h6>
+                            <h2 className="text-2xl md:text-3xl mb-1">{item.name}</h2>
+                            <p className="text-base md:text-lg mb-3">{item.desc}</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="22.999" height="23" viewBox="0 0 22.999 23">
                                 <g id="Gruppe_676" data-name="Gruppe 676" transform="translate(0)">
                                     <path id="Pfad_396" d="M0,0H23V23H0Z" transform="translate(0)" fill="none" />
