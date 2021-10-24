@@ -5,10 +5,10 @@ import Zoom from 'react-reveal/Zoom';
 function Contact() {
     return (
         <div className="Home_Contact BG text-white">
-            <div className="container flex justify-center md:justify-end py-32 px-3 md:px-0">
+            <div className="container flex justify-center md:justify-end py-32 px-6 md:px-0">
             <Zoom cascade>
                 <div className="w-100 md:w-1/2">
-                    <h3 className="text-lg md:text-3xl mb-2">Do you have a project that needs some love?
+                    <h3 className="text-lg md:text-3xl mb-2 pr-4 md:pr-0">Do you have a project that needs some love?
                         Fill in the form below, or  holla at us at
                     </h3>
                     <div><a href="mailto:info@talenko-ks.com?body=My custom mail body" className="bg-white text-black py-1 px-4 rounded-2xl my-2 text-lg md:text-2xl">

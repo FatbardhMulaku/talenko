@@ -41,10 +41,10 @@ const useStyles = makeStyles((theme) => ({
   },
   [theme.breakpoints.down("xs")]: {
     box1: {
-      padding: "3px 10px !important",
+      padding: "5px 10px !important",
     },
     box2: {
-      padding: "3px 10px !important"
+      padding: "5px 10px !important"
     },
     appBar: {
       padding: "3px 0",

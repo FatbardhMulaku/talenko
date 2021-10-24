@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: "5px 20px",
       fontSize: "12px !important",
-      marginLeft: "auto",
-      marginRight: "auto",
+      marginLeft: "auto !important",
+      marginRight: "auto !important ",
     },
   },
   "@keyframes icone-effect": {

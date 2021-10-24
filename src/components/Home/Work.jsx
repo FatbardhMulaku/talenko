@@ -23,7 +23,7 @@ function Work() {
                     </Fade>
                     <Fade right className="my-auto">
 
-                        <h2 className="my-auto text-lg md:text-4xl text-center md:text-left mt-4 md:mt-0">Want to know what you <br />
+                        <h2 className="my-auto text-lg md:text-4xl text-center md:text-left mt-8 md:mt-0">Want to know what you <br />
                             can expect? Scroll below! </h2>
                     </Fade>
                 </div>

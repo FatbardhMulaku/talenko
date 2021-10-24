@@ -12,9 +12,9 @@ const link = [
 function index(props) {
 
     return (
-        <div className="FullMenu flex justify-center items-center">
+            <div className="FullMenu flex justify-center items-center">
             {props.open && <span to="#" onClick={props.handleOpen} className="FullMenu__close">&#10006;</span>}
-            <div className="FullMenu__wrapper">
+            <div className="FullMenu__wrapper container">
 
                 {link.map((item, index) => {
                     return (
@@ -24,6 +24,7 @@ function index(props) {
 
             </div>
         </div>
+       
     )
 }
 

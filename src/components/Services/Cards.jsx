@@ -8,7 +8,7 @@ function Cards() {
         <div className="Service-Cards container">
             {ServiceData.map((item, idx) => {
                 return (
-                    <div className="Service-Cards__box BG">
+                    <div key={idx} className="Service-Cards__box BG">
                         <h5>0{idx + 1}</h5>
 
                         <div className={`flex ${item.class} py-20 flex-col md:flex-row`}>

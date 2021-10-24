@@ -14,7 +14,7 @@ import Menu from "../components/Shared/Menu/index";
 import Work from "../pages/Work";
 import Agency from "../pages/Agency";
 import Contact from "../pages/Contact";
-
+import Info from "../pages/Info";
 
 const Routes = () => {
   const [open, setOpen] = useState(false)
@@ -48,7 +48,7 @@ const Routes = () => {
           <Route path="/Work" exact render={() => <Work />} />
           <Route path="/Agency" exact render={() => <Agency />} />
           <Route path="/Contact" exact render={() => <Contact />} />
-
+          <Route path="/Info" exact render={() => <Info />} />
 
           <Route path="/404" render={() => <PageNotFound />} />
           <Redirect to="/404" />

@@ -3,10 +3,10 @@ import Fade from 'react-reveal/Fade';
 
 function DotAgency() {
     return (
-        <div className="Work-DotAgency container flex flex-col md:flex-row py-20 px-3 md:px-0">
+        <div className="Work-DotAgency container flex flex-col md:flex-row py-20 px-5 md:px-0">
             <div className="w-100 md:w-1/2 flex">
             <Fade top big>
-                    <h3 className="my-auto pr-8 text-4xl text-yellow-600">01/</h3>
+                    <h3 className="my-auto pr-3 md:pr-8 text-3xl md:text-4xl text-yellow-600">01/</h3>
               </Fade>
                 <div>
                 <Fade>

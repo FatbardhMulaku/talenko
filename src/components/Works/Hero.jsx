@@ -11,7 +11,7 @@ function Hero() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="53.128" height="53.128" viewBox="0 0 53.128 53.128">
                             <path id="Path_715" data-name="Path 715" d="M26.35,29.859H53.128v1.785H26.35a.754.754,0,0,0-.532,1.287L44.752,51.866,43.49,53.128,0,9.638,1.263,8.377,20.2,27.311a.754.754,0,0,0,1.287-.532V0h1.785V26.778a.754.754,0,0,0,1.287.533L43.49,8.377l1.262,1.262L25.818,28.574a.752.752,0,0,0,.532,1.285Z" transform="translate(0 53.128) rotate(-90)" fill="#f2b100" />
                         </svg>
-                        <h1 className="text-left text-3xl md:text-8xl mb-10">Our Work</h1>
+                        <h1 className="text-left text-3xl md:text-8xl mb-10 pl-5 md:pl-2 pt-4 md:pt-1">Our Work</h1>
 
                     </div>
                 </Zoom>

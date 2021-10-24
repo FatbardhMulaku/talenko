@@ -1,0 +1,80 @@
+.Info {
+  &__hero {
+    background-image: linear-gradient(to right, #00000033, #00000033),
+      url("../../assets/Info/hhh.jpg");
+  }
+  &-Section {
+    &__img1,
+    &__img2 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include xauto;
+      width: auto;
+      height: 600px;
+      @include respond(sm) {
+        width: 350px;
+      }
+    }
+    &__img1 {
+      background-image: url("../../assets/Info/img1.png");
+    }
+    &__img2 {
+      background-image: url("../../assets/Info/img2.png");
+      height: 700px;
+    }
+  }
+  &_ImgSection {
+    padding: 100px 0;
+    margin-top: 100px;
+    @include respond(sm) {
+      padding: 0px 0;
+    }
+    &_1,
+    &_2 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 25px;
+      outline: 1px solid white;
+      outline-offset: 15px;
+      margin: 50px auto;
+      @include respond(sm) {
+        outline-offset: 8px;
+        margin: 30px auto;
+      }
+    }
+    &_1 {
+      background-image: url("../../assets/Info/tv814.jpg");
+      width: 757px;
+      height: 530px;
+      @include respond(sm) {
+        width: 340px;
+        height: 240px;
+      }
+    }
+    &_2 {
+      background-image: url("../../assets/Info/mob3815.jpg");
+      width: 500px;
+      height: 530px;
+      @include respond(sm) {
+        width: 330px;
+        height: 350px;
+      }
+    }
+  }
+  &_End-Img {
+    background-image: url("../../assets/Info/Mask\ Group\ 27.png");
+    width: 100%;
+    height: 100vh;
+    @include respond(md) {
+      height: 60vh;
+    }
+    @include respond(sm) {
+      height: 50vh;
+    }
+    @include respond(xs) {
+      height: 40vh;
+    }
+  }
+}
