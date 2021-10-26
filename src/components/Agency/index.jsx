@@ -1,5 +1,5 @@
 import React from 'react';
-import Aboutus from "../Home/Aboutus"
+import Aboutus from "./Aboutus"
 import OurStory from './OurStory';
 import Service from './Service';
 import Team from './Team';
