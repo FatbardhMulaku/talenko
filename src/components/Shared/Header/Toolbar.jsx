@@ -91,7 +91,7 @@ const Toolbar = (props) => {
 
                 <div className="DownMenu-lang">
                   {Lang.map((item, index) => (
-                    <div className="DownMenu-lang__box"> 
+                    <div key={index} className="DownMenu-lang__box"> 
                         <div className={`DownMenu-lang${index+1} BG`}/> <p>{item}</p>
                     </div>
                   ))}

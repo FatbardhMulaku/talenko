@@ -1,58 +1,134 @@
-.FullMenu{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background-color: black;
-    z-index: 50000;
-    transition: 0.3s ease-in all;
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-        @include respond(sm){
-            padding: 0 30px;
-        }
+.FullMenu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  z-index: 50000;
+  transition: 0.3s ease-in all;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include respond(sm) {
+      padding: 0 30px;
     }
-    &__item{
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 30px;
-        transition: 0.4s ease-in all;
-        margin: 10px 0;
-        color: rgba(255, 255, 255, 0.5);
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-        width: 90%;
-        font-size: 60px;
-        padding: 10px;
+  }
+  &__item {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.4s ease-in all;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    width: 90%;
+    font-size: 60px;
+    padding: 10px;
 
-        &:hover{
-            transform: scale(1.02);
-            border-color: white;
-            color: white;
-        }
-        @include respond(md){
-            width: 95%;
-            font-size: 30px;
-            width: 99%;
-        }
+    &:hover {
+      transform: scale(1.02);
+      border-color: white;
+      color: white;
     }
-    &__close{
-        font-size: 50px;
-        position: fixed;
-        top: 47vh;
-        right: 3vw;
-        color: white;
-        cursor: pointer;
-        transition: 0.4s ease-in all;
-        &:hover{
-            transform: scale(1.2);
-        }
-        @include respond(sm){
-            font-size: 35px;
-            top: 88vh;
-            right: 46vw;
-        }
-        @include respond(xs){
-            right: 45vw;
-        }
+    @include respond(md) {
+      width: 95%;
+      font-size: 30px;
+      width: 99%;
     }
+  }
+  &__close {
+    font-size: 50px;
+    position: fixed;
+    top: 47vh;
+    right: 3vw;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in all;
+    &:hover {
+      transform: scale(1.2);
+    }
+    @include respond(sm) {
+      font-size: 35px;
+      top: 88vh;
+      right: 46vw;
+    }
+    @include respond(xs) {
+      right: 45vw;
+    }
+  }
+}
+
+// -----  Menu content---------
+
+.Menu {
+  width: 98vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  @include respond(md) {
+    width: 95vw;
+  }
+  /*  &:hover .Menu_icon1{
+        &:hover{
+            transform: translateY(-20px);
+        }
+    } */
+  /*  &:hover .Menu_icon2{
+        &:hover{
+            transform: translateY(20px);
+        }
+    } */
+  &__box {
+    position: absolute;
+
+    &:hover .Menu_icon1 {
+      &:hover {
+        transform: translateY(-20px);
+      }
+    }
+    &:hover .Menu_icon2 {
+      &:hover {
+        transform: translateY(20px);
+      }
+    }
+  }
+
+  &__icon1 {
+    position: fixed;
+    display: block !important;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+  }
+  &__icon2 {
+    position: fixed;
+    display: block !important;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+  }
+
+  &--box {
+    display: flex;
+    position: fixed;
+    cursor: pointer;
+    &:hover .Menu--box__line1 {
+      transform: translateY(-20px);
+      svg {
+        height: 70px;
+      }
+    }
+    &:hover .Menu--box__line2 {
+      transform: translateY(20px);
+      svg {
+        height: 70px;
+      }
+    }
+    &__line1 {
+      transition: 0.3s ease-in-out all;
+    }
+    &__line2 {
+      margin-left: 8px;
+      transition: 0.3s ease-in-out all;
+    }
+  }
 }

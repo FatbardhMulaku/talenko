@@ -7,26 +7,6 @@
     src:  url('../../assets/font/ClashDisplay-Regular_0.otf') format('otf'),    
 }
 
-.Menu{
-    width: 98vw;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-   /*  @include respond(md){
-        width: 95vw;
-    } */
-    &__icon{
-        position: fixed;
-        display: block !important;
-        transition: 0.3s ease-in-out all;
-        cursor: pointer;
-        &:hover{
-            transform: scale(1.3);
-        }
-    }
-}
 
 .BG{
     background-repeat: no-repeat;
