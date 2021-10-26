@@ -11,6 +11,7 @@ function ContactInfo() {
                     <h3 className="text-left text-lg md:text-3xl mb-8">Be ready to work with us</h3>
                     <Button
                         name="contact"
+                        hover="GET TO KNOW US"
                         link="/Contact"
                         margin="10px 0"
                     />

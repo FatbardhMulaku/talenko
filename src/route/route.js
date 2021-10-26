@@ -23,6 +23,20 @@ const Routes = () => {
     setOpen(!open)
     console.log("handelClick", open)
   }
+  console.log(window.location.pathname);
+
+      var menucolor = "#f24200"
+      /* if(window.location.pathname = "/"){
+        menucolor="poo"
+        console.log(menucolor);
+      } */
+     /*  switch(menucolor) {
+        case '/':
+          return menucolor = "home";
+        case '/service':
+          return menucolor = "service";
+      } */
+      console.log(menucolor);
 
   return (
     <>

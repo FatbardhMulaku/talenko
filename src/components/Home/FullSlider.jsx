@@ -46,16 +46,16 @@ export class FullSlider extends Component {
                                         <div className="flex mb-12 md:mb-32">
                                             <p>0{i + 1}</p>
                                             <div style={{ width: "160px" }} className="border-b-4 border-gray-700 my-auto mx-3">
-                                                <div style={{ width: `${(i + 1) * 40}px`, position:"absolute",top:"80px" }} className="text-white border-b-4 border-white h-1 my-auto  " />
+                                                <div style={{ width: `${(i + 1) * 40}px`, position:"absolute",top:"82px" }} className="text-white border-b-4 border-white h-1 my-auto  " />
                                             </div> 
                                             <p>0{FullSliderdata.length}</p>
                                         </div>
 
-                                        <h5 className="text-lg md:text-2xl text-gray-400 mb-0">{item.subtitle}</h5>
+                                        <h5 className="text-lg md:text-2xl mb-0">{item.subtitle}</h5>
                                         <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
-                                        <p className="text-base md:text-lg text-gray-400 mb-4">{item.desc}</p>
+                                        <p className="text-base md:text-lg mb-4">{item.desc}</p>
 
-                                        <Link to="#">Ride along</Link>
+                                        <Link to="#">RIDE ALONG</Link>
                                     </div>
 
                                     <div>

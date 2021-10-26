@@ -7,7 +7,7 @@ import ServiceSlider from './ServiceSlider';
 function Service() {
     return (
         <div className="Home__Service ">
-            <div className="container py-16">
+            <div className="container py-16 pt-24">
                 <div className="flex pl-6">
                     <div className="Home__Service--icon BG" />
                     <h5 className="mt-2 text-lg md:text-2xl">SERVICES</h5>
@@ -23,15 +23,16 @@ function Service() {
                         name="See All"
                         link="/Service"
                         margin="auto 10px"
+                        hover="CHOOSE YOUR SERVICE"
                     />
                     </Fade>
                 </div>
                 
 
-                <ServiceSlider />
-                </div>
+                
+            </div>
            
-
+                <ServiceSlider />
             
 
         </div>

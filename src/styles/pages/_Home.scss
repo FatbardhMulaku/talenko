@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "myFont";
-  src: url("../../assets/font/ClashDisplay-Regular_0.otf") format("otf");
-}
 .Home {
   &__hero {
     padding: 100px 0;
@@ -19,15 +15,19 @@
       color: #fff !important;
       text-align: center;
       font-size: 55px;
+      font-family: "Med";
+      letter-spacing: 0px;
       @include respond(md) {
         font-size: 20px;
       }
     }
     & > p {
       color: white;
-      font-size: 20px;
+      font-size: 22px;
       text-align: center;
       margin-top: 60px;
+      font-family: "Reg";
+      letter-spacing: 0px;
       @include xauto;
       @include respond(md) {
         font-size: 16px;
@@ -43,20 +43,36 @@
       }
       & > p {
         font-size: 18px;
+        font-family: "Reg";
       }
     }
   }
-  &Work{
-    &>div > div:last-child > div:first-child{
-      @include respond(md){
+  // ------  work --------------
+  &Work {
+    & > div > div:last-child > div:first-child {
+      @include respond(md) {
         @include xauto;
       }
     }
+    H5 {
+      font-size: 28px;
+      font-family: "Reg";
+    }
+    h2 {
+      font-size: 45px;
+      font-family: "Med";
+    }
+    &__lover{
+      &>div:first-child{
+        @include yauto;
+      }
+    }
   }
+  // -------- service ---------------
   &__Service {
     background-color: black;
     color: white;
-    padding: 0 40px;
+
     @include respond(md) {
       padding: 0px;
     }
@@ -68,12 +84,15 @@
     h5 {
       margin-left: -4px;
       margin-bottom: 30px;
+      font-family: "Reg";
+
       @include respond(md) {
         margin-bottom: 20px;
       }
     }
     h2 {
-      font-size: 40px;
+      font-size: 45px;
+      font-family: "Med";
       @include respond(md) {
         text-align: center;
         font-size: 18px;
@@ -99,13 +118,13 @@
 }
 
 .ServiceSlider {
-  margin-top: 80px;
+  margin-top: 50px;
   background-image: linear-gradient(to right, #00000060, #00000060),
     url("../../assets/Home/grain.jpg");
   padding: 0 0 120px 0;
   margin-left: auto;
   margin-right: auto;
-  background-attachment: fixed;
+  cursor: move;
   @include respond(md) {
     padding: 0px 0;
     margin-top: 0px;
@@ -124,9 +143,12 @@
     }
     h4 {
       margin-bottom: 25px;
+      font-size: 28px;
+      font-family: "Med";
     }
     p {
-      font-size: 14px;
+      font-size: 18px;
+      font-family: "Reg";
       width: 80%;
       @include respond(md) {
         width: 100%;
@@ -234,6 +256,24 @@
     @include respond(md) {
       flex-direction: column;
     }
+    h5 {
+      font-size: 20px;
+      font-family: "Reg";
+      color: rgba(255, 255, 255, 0.603);
+    }
+    h2 {
+      font-size: 45px;
+      font-family: "Med";
+    }
+    p {
+      font-size: 18px;
+      font-family: "Reg";
+      color: rgba(255, 255, 255, 0.705);
+    }
+    a {
+      font-size: 20px;
+      font-family: "Reg";
+    }
   }
   &A1,
   &A3 {
@@ -262,5 +302,23 @@
     width: 250px;
     height: 300px;
     align-self: flex-end;
+  }
+}
+
+.HomeAboutus {
+  h1 {
+    font-size: 100px;
+    font-family: "Med";
+  }
+  p {
+    font-size: 22px;
+    font-family: "Reg";
+  }
+}
+
+.Home_Contact {
+  h3 {
+    font-size: 32px;
+    font-family: "Reg";
   }
 }

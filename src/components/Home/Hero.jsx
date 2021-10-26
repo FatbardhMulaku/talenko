@@ -1,7 +1,7 @@
 import React from 'react';
 import MainHero from '../Shared/Hero/MainHero';
 import Button from '../Shared/Button/Buttons';
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 function Hero() {
     return (
@@ -11,22 +11,23 @@ function Hero() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="113.733" height="113.733" viewBox="0 0 113.733 113.733">
                     <path id="Path_15" data-name="Path 15" d="M1217.83,302.157h40.535v-2.7H1217.83a1.142,1.142,0,0,1-.805-1.948l28.661-28.662-1.911-1.91-65.831,65.833,1.912,1.909,28.66-28.661a1.141,1.141,0,0,1,1.949.805v40.536h2.7V306.822a1.141,1.141,0,0,1,1.948-.807l28.66,28.661,1.911-1.91L1217.025,304.1a1.139,1.139,0,0,1,.805-1.946Z" transform="translate(701.048 1135.416) rotate(-135)" fill="#fff" />
                 </svg>
-                <Zoom top cascade>
+                <Fade>
                     <h1 className="mt-4">All Eyes on the Digital Hype</h1>
-                </Zoom>
+                </Fade>
                 <svg xmlns="http://www.w3.org/2000/svg" width="2.993" height="68.663" viewBox="0 0 1.993 68.663">
                     <path id="Path_18" data-name="Path 18" d="M1349.346,424.926h38.768v-1.993H1319.45v1.992Z" transform="translate(424.926 -1319.45) rotate(90)" fill="#fff" />
                 </svg>
-                <Zoom>
+                <Fade>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur <br />
                         adipiscing sed do eiusmod tempor incididunt<br />
                         ut labore et dolore ips.
                     </p>
-                </Zoom>
+                </Fade>
                 <div className="flex justify-center mt-4">
                     <Button
                         name="GET TO KNOW US"
+                        hover="GET TO KNOW US"
                         link="Home__Service"
                         margin="50px auto !important"
                     />

@@ -1,7 +1,3 @@
-@font-face {
-    font-family: "myFont";
-    src: url("./assets/font/ClashDisplay-Medium.otf") format('otf');
-}
 body{
   background-color: #000;
   color: white;

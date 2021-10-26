@@ -20,6 +20,7 @@ function Contact() {
                         <input className="bg-transparent my-4 mb-16 p-4 border-b-2" placeholder="A few words about your projects (maybe?)"/>
                         <Buttons 
                             name="LET'S WORK TOGETHER"
+                            hover="LET'S WORK TOGETHER"
                             link="HomeHero"
                             margin="0"
                         />

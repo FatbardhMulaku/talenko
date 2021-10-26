@@ -11,21 +11,32 @@ const useStyles = makeStyles((theme) => ({
     padding: "8px 40px",
     border: "1px solid white",
     color: "white",
-    fontWeight: "bold",
+  
     margin: (props) => props.margin,
     "& > .MuiButton-label": {
       textTransform: "capitalize",
 
-      fontFamily: " Arial, Helvetica, sans-serif",
-      fontSize: "16px",
+      fontFamily: "Med",
+      fontSize: "20px",
     },
     "&:hover": {
-      backgroundColor: "white",
-      color: "black",
+      backgroundColor: "transparent",
+      color: "white",
+      "& .Btn-Class__active":{
+        display:"none",
+
+      },
+      "& .Btn-Class__hover":{
+        display:"inline"
+      },
       /* border: (props) => props.HoverBorder, */
+      borderColor:"transparent",
       "& > span > svg": {
         animation: `$icone-effect 0.8s ease-in-out infinite`,
       },
+    },
+    "& .Btn-Class__hover":{
+      display:"none"
     },
     [theme.breakpoints.down("sm")]: {
       padding: "5px 20px",
@@ -62,18 +73,20 @@ function Buttons(props) {
     <Button
       variant="contained"
       component={link ? LinkRouter : ScrollLink}
-      className={classes.btn}
+      className={`${classes.btn} Btn-Class`}
       to={linkPath}
       {...(!link && linkScroll)}
     >
       <i className={props.icon}></i>
-        {props.name}
+        
+        <span className="Btn-Class__active">{props.name}</span>
+        <span className="Btn-Class__hover">{props.hover}</span>
     </Button>
   );
 }
 
 Buttons.defaultProps = {
-  margin:"10px 30px"
+  margin:"10px 30px",
 };
 
 export default Buttons;

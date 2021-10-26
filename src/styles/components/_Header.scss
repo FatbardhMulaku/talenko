@@ -1,20 +1,56 @@
-.Header{
-    &__btn{
-/*         background-image: url("../../assets/Path16.svg");
-        background-position: center;
-        padding: 5px;
-        background-size: contain; */
-        cursor: pointer;
-        transition: 0.5s ease-in all;
-        &:hover{
-            stroke: #F24200 ;
-        }
-        &:hover path{
-            stroke: #F24200;
-        }
-        @include respond(md){
-            width:109px;
-            height:30px;
-        }
+.Header {
+  &__btn {
+    cursor: pointer;
+    transition: 0.5s ease-in all;
+    &:hover {
+      stroke: #f24200;
     }
+    &:hover path {
+      stroke: #f24200;
+    }
+    @include respond(md) {
+      width: 109px;
+      height: 30px;
+    }
+    &home{
+        &:hover {
+            stroke: #f24200;
+          }
+          &:hover path {
+            stroke: #f24200;
+          }
+    }
+    &agency{
+        &:hover {
+            stroke: #FF156F;
+          }
+          &:hover path {
+            stroke: #FF156F;
+          }
+    }
+    &service{
+        &:hover {
+            stroke: #0FF1CA;
+          }
+          &:hover path {
+            stroke: #0FF1CA;
+          }
+    }
+    &work{
+        &:hover {
+            stroke: #F2B100;
+          }
+          &:hover path {
+            stroke: #F2B100;
+          }
+    }
+    &info{
+        &:hover {
+            stroke: #fff;
+          }
+          &:hover path {
+            stroke: #fff;
+          }
+    }
+  }
 }

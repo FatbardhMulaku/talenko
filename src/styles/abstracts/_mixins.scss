@@ -78,3 +78,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@font-face {
+	font-family: Med;
+	src: url("../../assets/font/ClashDisplay-Medium.otf");
+}
+
+@font-face {
+	font-family: Reg;
+	src: url("../../assets/font/ClashDisplay-Regular_0.otf");
+}
+
+@font-face {
+	font-family: Firs;
+	src: url("../../assets/font/Hound.ttf");
+}
+
+
+@mixin fonti($fo) {
+	font-family: $fo;
+}

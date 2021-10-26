@@ -1,7 +1,10 @@
 @font-face {
-    font-family: 'MyFont';
-    src:  url('../../assets/font/ClashDisplay-Medium.otf') format('otf'),
-        
+    font-family: "MyMedium";
+    src:  url('../../assets/font/ClashDisplay-Medium.otf') format('otf'),    
+}
+@font-face {
+    font-family: 'MyRegular';
+    src:  url('../../assets/font/ClashDisplay-Regular_0.otf') format('otf'),    
 }
 
 .Menu{
@@ -31,8 +34,12 @@
     background-position: center;
 }
 
-@include respond(lg){
     .slick-slider > button {
         display: none !important;
     }
+
+
+.Btn-Class:hover{
+    animation-duration: 3s;
+    animation-name: BtnEffect;
 }

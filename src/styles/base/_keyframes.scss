@@ -6,3 +6,15 @@
 	  transform: rotate(-360deg);
 	}
   }
+
+@keyframes BtnEffect {
+	0% {
+	  border-width: 1px;
+	}
+	50% {
+		border-width: 0.5px;
+	}
+	100% {
+		border-width: 0px;
+	}
+}

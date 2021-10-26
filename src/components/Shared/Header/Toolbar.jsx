@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { AppBar, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 /* import NavList from "./NavList"; */
@@ -9,6 +9,8 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 /* import Icon from "./Icon"; */
 /* import "./Toolbar.css"; */
 import { ReactComponent as Btn } from "../../../assets/Home/btn_head.svg";
+
+const Lang = ["English","German","French", "Albanian"];
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -71,7 +73,7 @@ const Toolbar = (props) => {
         <Logo style="logo_header" />
         <div className="flex">
 
-          <div className="flex searchIcon mr-4 md:mr-8 my-auto cursor-pointer">
+          <div className="flex searchIcon mr-4 md:mr-8 my-auto cursor-pointer DownMenu">
             <svg xmlns="http://www.w3.org/2000/svg" width="23.426" height="23.424" viewBox="0 0 25.426 25.424">
               <g id="Group_6" data-name="Group 6" transform="translate(-928.505 -407.348)">
                 <g id="Group_5" data-name="Group 5" transform="translate(928.505 407.348)">
@@ -80,10 +82,25 @@ const Toolbar = (props) => {
               </g>
             </svg>
 
-            <p className="ml-2 text-white">En ⏷</p>
+            <div className="flex">
+              <p className="inline ml-2 text-white">En</p>
+              <svg style={{margin:"auto 1px auto 5px"}} xmlns="http://www.w3.org/2000/svg" width="11.086" height="6.339" viewBox="0 0 11.086 6.339">
+                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M11.733,15.674l4.192-4.2a.789.789,0,0,1,1.119,0,.8.8,0,0,1,0,1.122l-4.75,4.753a.791.791,0,0,1-1.093.023L6.419,12.6a.792.792,0,1,1,1.119-1.122Z" transform="translate(-6.188 -11.246)" fill="#fff" />
+              </svg>
+
+
+                <div className="DownMenu-lang">
+                  {Lang.map((item, index) => (
+                    <div className="DownMenu-lang__box"> 
+                        <div className={`DownMenu-lang${index+1} BG`}/> <p>{item}</p>
+                    </div>
+                  ))}
+                </div>
+            </div>
+
           </div>
 
-          <Btn className="Header__btn" />
+          <Btn className={`Header__btn Header__btn${props.pageColor}`} />
 
         </div>
 

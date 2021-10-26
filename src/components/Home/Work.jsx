@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 function Work() {
     return (
-        <div className="HomeWork bg-black text-white py-10 pb-24">
+        <div className="HomeWork bg-black text-white py-24">
 
             <div className="container flex flex-col">
                 <div className="flex justify-self-end self-end mb-4">
@@ -13,10 +13,11 @@ function Work() {
                     <h5 className="mt-2 mr-4">WORK</h5>
                 </div>
                 <Diver width="100%" color="white" />
-                <div className="flex flex-col justify-center md:flex-row md:justify-between mt-4 mt-10">
+                <div className="HomeWork__lover flex flex-col justify-center md:flex-row md:justify-between mt-4 mt-10">
                     <Fade left  >
                         <Buttons
                             name="See All"
+                            hover="SEE OUR PROJECTS"
                             link="/Service"
                             margin="auto 10px"
                         />

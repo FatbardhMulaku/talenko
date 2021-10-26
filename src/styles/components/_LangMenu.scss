@@ -1,0 +1,47 @@
+.DownMenu:hover{
+    .DownMenu-lang{
+       display: flex;
+    }
+}
+
+.DownMenu-lang{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    transform: translate(-60px,25px);
+    transition: 0.3s ease-in all;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    &__box{
+        display: flex;
+        padding: 4px 0;
+        p{
+            @include yauto;
+            margin-left: 10px;
+            color: rgba(255, 255, 255, 0.582);
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    &1,&2,&3,&4{
+        width: 25px;
+        height: 16px;
+        @include yauto;
+       
+    }
+    &1{
+        background-image: url("../../assets/flags/en.png");
+    }
+    &2{
+        background-image: url("../../assets/flags/de.png");
+    }
+    &3{
+        background-image: url("../../assets/flags/fr.png");
+    }
+    &4{
+        background-image: url("../../assets/flags/al.png");
+    }
+}
