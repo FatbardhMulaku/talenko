@@ -14,7 +14,7 @@ function Service() {
             <div className="flex flex-col md:flex-row pt-16">
                 <div className="w-100 md:w-1/3 px-0 md:px-6">
                     <Fade top big>
-                        <h5 className="text-2xl md:text-5xl pb-6">Talenko is</h5>
+                        <h4 className="text-2xl md:text-5xl pb-6">Talenko is</h4>
                     </Fade>
                 </div>
                 <Fade bottom cascade>

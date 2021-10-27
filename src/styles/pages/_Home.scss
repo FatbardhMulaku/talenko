@@ -68,12 +68,11 @@
       }
     }
   }
-  // -------- service ---------------
+
+  // ------------ service ---------------
   &__Service {
     background-color: black;
     color: white;
-    background-image: linear-gradient(to right, #00000020, #00000020),
-      url("../../assets/Home/grain.jpg");
 
     @include respond(md) {
       padding: 0px;
@@ -120,11 +119,14 @@
 }
 
 .ServiceSlider {
+  background-image: linear-gradient(to right, #00000020, #00000020),
+    url("../../assets/Home/grain.jpg");
   margin-top: 50px;
-  padding: 0 0 120px 0;
+  padding: 20px 0 140px 0;
   margin-left: auto;
   margin-right: auto;
-  cursor: move;
+  cursor: -webkit-grab; 
+  cursor: grab;
   @include respond(md) {
     padding: 0px 0;
     margin-top: 0px;
@@ -170,7 +172,7 @@
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    border-bottom: 2px solid #707070;
+    /* border-bottom: 2px solid #707070; */
     @include respond(md) {
       /*  width: 300px !important;
       height: fit-content !important; */
@@ -182,30 +184,86 @@
   &BG1 {
     &:hover {
       background-image: url("../../assets/Home/phone-mockup.png");
-      border-color: white;
+    /*   border-color: white; */
       transition: background 1s ease;
     }
   }
   &BG2 {
     &:hover {
       background-image: url("../../assets/Home/llaptopi2.png");
-      border-color: white;
+    /*   border-color: white; */
     }
   }
   &BG3 {
     &:hover {
       background-image: url("../../assets/Home/isnta.png");
-      border-color: white;
+    /*   border-color: white; */
     }
   }
   &BG4 {
     padding-bottom: 27px;
     &:hover {
       background-image: url("../../assets/Home/branding.png");
-      border-color: white;
+    /*   border-color: white; */
     }
   }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 20vw;
+      height: 3px;
+      margin: 0px;
+      padding: 0;
+      cursor: pointer;
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20vw;
+        height: 3px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+      }
+    }
+  }
+  .slick-dots li button:before {
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 3px;
+    content: "";
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: black;
+  }
 }
+
 .slick-track {
   width: max-content !important;
 }
@@ -315,6 +373,9 @@
   h1 {
     font-size: 100px;
     font-family: "Med";
+    @include respond(md) {
+      font-size: 50px;
+    }
   }
   p {
     font-size: 22px;
@@ -322,9 +383,13 @@
   }
 }
 
+// --------------- contact ------------
 .Home_Contact {
   h3 {
     font-size: 32px;
     font-family: "Reg";
   }
+}
+.Contact__input::placeholder {
+  font-family: "Med";
 }

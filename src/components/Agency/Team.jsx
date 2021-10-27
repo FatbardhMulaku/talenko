@@ -6,7 +6,7 @@ function Team() {
     return (
         <div className="Agency-Team container">
             <div className="flex px-6 md:px-0"><div className="Home__Service--icon BG" />
-                <h5 className="mt-2 text-2xl md:text-3xl">Meet the team</h5>
+                <h5 className="mt-1 text-2xl md:text-3xl">Meet the team</h5>
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center">

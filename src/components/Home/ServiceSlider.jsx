@@ -17,6 +17,7 @@ export class ServiceSlider extends Component {
             autoplaySpeed: 2000,
             cssEase: "linear",
             initialSlide: 0,
+            swipeToSlide:true,
             responsive: [
                 {
                     breakpoint: 1200,
@@ -49,7 +50,8 @@ export class ServiceSlider extends Component {
             ],
         };
         return (
-            <div className="ServiceSlider container">
+            <div className="ServiceSlider ">
+             <div className="container">
              <Fade bottom cascade> 
                 <Slider {...settings}>
                     {ServiceData.map((item, i) => {
@@ -67,6 +69,7 @@ export class ServiceSlider extends Component {
                     })}
                 </Slider>
                 </Fade>
+             </div>
             </div>
         )
     }

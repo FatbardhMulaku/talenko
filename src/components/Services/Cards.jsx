@@ -1,7 +1,7 @@
 import React from 'react'
 import { ServiceData } from "../Home/data";
 import Zoom from 'react-reveal/Zoom';
-import Bounce from 'react-reveal/Bounce';
+import Bounce from 'react-reveal/Fade';
 
 function Cards() {
     return (
@@ -13,10 +13,10 @@ function Cards() {
 
                         <div className={`flex ${item.class} py-20 flex-col md:flex-row`}>
                             <div className="w-100 md:w-2/5 my-auto">
-                                <Bounce top>
+                                <Bounce >
                                     <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
                                 </Bounce>
-                                <Bounce bottom>
+                                <Bounce >
                                     <p className="text-base md:text-lg text-gray-400 mb-4">{item.desc}</p>
                                 </Bounce>
                             </div>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="129.99" height="38.927" viewBox="0 0 129.99 38.927">
   <g id="Component_9_1" data-name="Component 9 – 1" transform="translate(0.583 0.501)">
-    <text id="Get_in_touch" data-name="Get in touch" transform="translate(8.991 25.5)" fill="#fff" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">GET IN TOUCH</tspan></text>
+    <text id="Get_in_touch" data-name="Get in touch" transform="translate(8.991 25.5)" fill="#fff" font-size="16" font-family="Reg"><tspan x="0" y="0">GET IN TOUCH</tspan></text>
     <path id="Path_16" data-name="Path 16" d="M1463.446,1030.642a177.55,177.55,0,0,0-34.968-2c-11,.443-22.326,1.437-32.213,6.162-8.484,4.057-21.114,15.672-9.97,23.529,7.916,5.581,19.852,6.682,29.53,7.452,23,1.83,46.31-.12,69.31-1.15,5.114-.229,10.332-.478,15.1-2.166,10.3-3.647,14.569-15.637,5.746-22.791-6.019-4.882-15.523-5.465-23.232-5.614a87.108,87.108,0,0,0-27.029,3.735" transform="translate(-1381.912 -1028.494)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
   </g>
 </svg>

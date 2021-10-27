@@ -2,18 +2,54 @@
   &__hero {
     background-image: linear-gradient(to right, #00000093, #00000093),
       url("../../assets/Work/grain.jpg");
-    svg{
-        transform: translate(-30px,55px);
+    & > div:first-child > div:first-child svg {
+      transform: translate(-30px, 55px);
+    }
+    h1 {
+      font: normal normal  120px/148px "Med";
+    }
+    p {
+      font: normal normal  22px/37px "Reg";
     }
   }
-  &-DotAgency{
-        &__img{
-            background-image: url("../../assets/Work/car.png");
-            width: auto;
-            height: 380px;
-            @include respond(sm){
-                height: 280px;
-            }
-        }
+
+  // -----------------DotAgency-------------------
+  &-DotAgency {
+    &__img {
+      background-image: url("../../assets/Work/car.png");
+      width: auto;
+      height: 380px;
+      @include respond(sm) {
+        height: 280px;
+      }
+    }
+    h1{
+      font: normal normal  100px/123px "Reg";
+    }
+    p{
+      font: normal normal  22px/37px "Reg";
+    }
+    h3{
+      font: normal normal  45px/55px"Reg";
+    }
+  }
+
+  // --------------- ContactInfo ---------------------
+  &-ContactInfo{
+    h3{
+      font: normal normal  45px/65px "Med";
+    }
+    p{
+      font: normal normal  18px/35px "Reg";
+    }
+  }
+
+  &-HrLine {
+    position: absolute;
+    transform: translate(16vw, -13vh);
+    height: 240px !important;
+    @include respond(sm) {
+      height: 150px !important;
+    }
   }
 }

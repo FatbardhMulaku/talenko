@@ -16,8 +16,8 @@ function Contact() {
                     <h3 className="text-lg md:text-3xl mt-10 mb-16">We can't wait to get back to you!</h3>
 
                     <form className="flex flex-col">
-                        <input className="bg-transparent my-4 p-4 border-b-2 " placeholder="Your email"/>
-                        <input className="bg-transparent my-4 mb-16 p-4 border-b-2" placeholder="A few words about your projects (maybe?)"/>
+                        <input className="Contact__input bg-transparent my-4 p-4 border-b-2 " placeholder="Your email"/>
+                        <input className="Contact__input bg-transparent my-4 mb-16 p-4 border-b-2" placeholder="A few words about your projects (maybe?)"/>
                         <Buttons 
                             name="LET'S WORK TOGETHER"
                             hover="LET'S WORK TOGETHER"

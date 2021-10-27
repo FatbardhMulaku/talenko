@@ -29,6 +29,11 @@ function Hero() {
                 </Zoom>
 
             </div>
+
+            <svg className="Work-HrLine" xmlns="http://www.w3.org/2000/svg" width="4.5" height="274.016" viewBox="0 0 4.5 274.016">
+                <line id="Line_31" data-name="Line 31" x2="3" y2="274" transform="translate(0.75 0.008)" fill="none" stroke="#f2b100" stroke-width="1.5" />
+            </svg>
+
         </MainHero>
     )
 }

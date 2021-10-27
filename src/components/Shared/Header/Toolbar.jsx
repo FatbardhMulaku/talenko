@@ -83,7 +83,7 @@ const Toolbar = (props) => {
             </svg>
 
             <div className="flex">
-              <p className="inline ml-2 text-white">En</p>
+              <p style={{fontFamily:"Reg"}} className="inline ml-2 text-white">En</p>
               <svg style={{margin:"auto 1px auto 5px"}} xmlns="http://www.w3.org/2000/svg" width="11.086" height="6.339" viewBox="0 0 11.086 6.339">
                 <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M11.733,15.674l4.192-4.2a.789.789,0,0,1,1.119,0,.8.8,0,0,1,0,1.122l-4.75,4.753a.791.791,0,0,1-1.093.023L6.419,12.6a.792.792,0,1,1,1.119-1.122Z" transform="translate(-6.188 -11.246)" fill="#fff" />
               </svg>

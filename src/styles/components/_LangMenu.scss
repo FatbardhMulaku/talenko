@@ -7,16 +7,17 @@
 .DownMenu-lang{
     display: flex;
     flex-direction: column;
-    padding: 15px 15px;
+    padding: 15px 17px;
     display: none;
     position: absolute;
     background-color: black;
     transform: translate(-60px,25px);
     transition: 0.3s ease-in all;
     border: 1px solid rgba(255, 255, 255, 0.329);
+    font-family: "Reg";
     &__box{
         display: flex;
-        padding: 4px 0;
+        padding: 4px ;
         p{
             @include yauto;
             margin-left: 10px;
@@ -24,6 +25,9 @@
             &:hover{
                 color: white;
             }
+        }
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.678);
         }
     }
     &1,&2,&3,&4{

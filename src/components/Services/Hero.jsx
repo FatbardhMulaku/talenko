@@ -1,6 +1,6 @@
 import React from 'react';
 import MainHero from '../Shared/Hero/MainHero';
-import Zoom from 'react-reveal/Zoom';
+import Zoom from 'react-reveal/Fade';
 
 function Hero() {
     return (
@@ -12,8 +12,8 @@ function Hero() {
                 </svg>
 
 
-                <Zoom top cascade>
-                    <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">We are Creatives</h1>
+                <Zoom  >
+                    <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">Through Sunrises & Sunsets</h1>
                 </Zoom>
 
                 <Zoom>

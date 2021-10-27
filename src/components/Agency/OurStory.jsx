@@ -18,7 +18,7 @@ function OurStory() {
                             <div key={idx} className="flex flex-col md:flex-row my-10 mb-20">
                                 <div className="w-100 md:w-2/5 px-0 md:px-6">
                                     <Fade top big>
-                                        <h5 className="text-2xl md:text-5xl pb-6">{item.title}</h5>
+                                        <h4 className="text-2xl md:text-5xl pb-6">{item.title}</h4>
                                     </Fade>
                                 </div>
 

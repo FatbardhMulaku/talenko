@@ -10,7 +10,7 @@ function DotAgency() {
   }
 
     return (
-        <div onClick={onClick} className="Work-DotAgency container flex flex-col md:flex-row py-20 px-5 md:px-0 cursor-pointer">
+        <div onClick={onClick} className="Work-DotAgency container flex flex-col md:flex-row py-48 px-5 md:px-0 cursor-pointer">
             <div className="w-100 md:w-1/2 flex">
             <Fade top big>
                     <h3 className="my-auto pr-3 md:pr-8 text-3xl md:text-4xl text-yellow-600">01/</h3>

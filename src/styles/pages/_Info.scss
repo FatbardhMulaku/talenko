@@ -2,6 +2,13 @@
   &__hero {
     background-image: linear-gradient(to right, #00000033, #00000033),
       url("../../assets/Info/hhh.jpg");
+    h1 {
+      font: normal normal  120px/148px "Med";
+    }
+  }
+
+  &__texth1 {
+    font: normal normal 120px/140px "Reg";
   }
   &-Section {
     &__img1,
@@ -23,7 +30,16 @@
       background-image: url("../../assets/Info/img2.png");
       height: 700px;
     }
+    h3{
+        font: normal normal 45px/60px "Med";
+    }
+    p{
+        font: normal normal  20px/35px "Reg";
+    }
   }
+
+
+
   &_ImgSection {
     padding: 100px 0;
     margin-top: 100px;

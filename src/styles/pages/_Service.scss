@@ -2,6 +2,12 @@
   &__hero {
     background-image: linear-gradient(to right, #00000093, #00000093),
       url("../../assets/Services/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg");
+    h1{
+      font: normal normal  60px/68px "Reg";
+    }
+    p{
+      font: normal normal  22px/28px "Reg";
+    }
   }
   &-Cards {
     display: flex;
@@ -19,6 +25,12 @@
         border-bottom: 1px solid white;
         padding-bottom: 30px;
         font-size: 25px;
+      }
+      h2{
+        font: normal normal  45px/88px "Med";
+      }
+      p{
+        font: normal normal  18px/30px "Reg";
       }
     }
     &A1{
@@ -56,6 +68,17 @@
             width: 320px;
             height: 300px;
         }
+    }
+  }
+
+
+  // -------------- TextInfo ---------------
+  &__TextInfo{
+    h3{
+      font: normal normal 120px/140px "Med";
+    }
+    p{
+      font: normal normal 300 32px/45px "Li";
     }
   }
 }
