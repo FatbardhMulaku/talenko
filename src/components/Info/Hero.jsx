@@ -16,6 +16,7 @@ function Hero() {
                     <div className="flex flex-row mb-8 md:mb-48">
                         <Buttons
                             name="Visit Website"
+                            hover="Visit Website"
                             link="/Agency"
                             margin="20px 0"
                         />

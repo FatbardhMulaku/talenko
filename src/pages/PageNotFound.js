@@ -14,6 +14,7 @@ const PageNotFound = (props) => {
       
         <Buttons 
           name="Go Back"
+          hover="< Go Back"
           link="/"
           margin="auto !important"
         />

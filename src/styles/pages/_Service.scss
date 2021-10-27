@@ -59,3 +59,11 @@
     }
   }
 }
+
+.HrLine{
+  position: absolute;
+  transform: translate(38vw, -18vh);
+  @include respond(sm){
+    height: 150px !important;
+  }
+}

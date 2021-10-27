@@ -49,7 +49,7 @@ export class ServiceSlider extends Component {
             ],
         };
         return (
-            <div className="ServiceSlider">
+            <div className="ServiceSlider container">
              <Fade bottom cascade> 
                 <Slider {...settings}>
                     {ServiceData.map((item, i) => {

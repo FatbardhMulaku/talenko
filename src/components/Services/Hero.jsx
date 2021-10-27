@@ -24,6 +24,10 @@ function Hero() {
                 </Zoom>
 
             </div>
+            <svg className="HrLine" xmlns="http://www.w3.org/2000/svg" width="1.5" height="264.072" viewBox="0 0 1.5 264.072">
+                <path id="Path_734" data-name="Path 734" d="M2126.854,695.337c-.078,263.953,0,264.072,0,264.072" transform="translate(-2126.104 -695.337)" fill="none" stroke="#0ff1ca" stroke-width="1.5" />
+            </svg>
+
         </MainHero>
     )
 }

@@ -7,7 +7,7 @@ import ServiceSlider from './ServiceSlider';
 function Service() {
     return (
         <div className="Home__Service ">
-            <div className="container py-16 pt-24">
+            <div className="container py-16 pt-24 bg-black">
                 <div className="flex pl-6">
                     <div className="Home__Service--icon BG" />
                     <h5 className="mt-2 text-lg md:text-2xl">SERVICES</h5>

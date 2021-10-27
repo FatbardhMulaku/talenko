@@ -19,7 +19,7 @@ function index() {
                     </h1>
                 </Flip>
             </div>
-            <Section img="img1"/>
+            <Section img="img1" styles="flex-row"/>
             <div className="container">
                 <Flip right cascade>
                     <h1 className="pb-16 pt-0 md:py-48 text-3xl sm:text-5xl lg:text-8xl px-5 lg:px-40">
