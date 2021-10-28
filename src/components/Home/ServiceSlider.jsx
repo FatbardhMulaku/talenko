@@ -9,6 +9,7 @@ export class ServiceSlider extends Component {
     render() {
         const settings = {
             dots: true,
+            arrows:false,
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,

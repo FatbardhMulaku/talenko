@@ -2,7 +2,11 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: black;
+
+  background-image: linear-gradient(to right, #00000020, #00000020),
+    url("../../assets/grain.png");
+  background-position: center;
+  background-size: cover;
   z-index: 50000;
   transition: 0.3s ease-in all;
   &__wrapper {
@@ -16,35 +20,44 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 30px;
-    transition: 0.4s ease-in all;
-    margin: 10px 0;
+    transition: 0.3s ease-in all;
+    margin: 0;
     color: rgba(255, 255, 255, 0.5);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     width: 90%;
     font-size: 60px;
-    padding: 10px;
-
+    padding: 30px 10px;
+    p{
+        font: normal normal  57px/70px "Reg";
+    }
     &:hover {
-      transform: scale(1.02);
-      border-color: white;
       color: white;
+      background-color: rgba(0, 0, 0, 0.462);
+      transition: 0.4s ease-in all;
+      .FullMenu__item--icon {
+        display: block;
+      }
     }
     @include respond(md) {
       width: 95%;
       font-size: 30px;
       width: 99%;
     }
+    &--icon {
+      display: none;
+      transition: 0.4s ease-in all;
+    }
   }
   &__close {
     font-size: 50px;
     position: fixed;
-    top: 47vh;
+    top: 49vh;
     right: 3vw;
     color: white;
     cursor: pointer;
     transition: 0.4s ease-in all;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
     @include respond(sm) {
       font-size: 35px;

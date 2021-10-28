@@ -217,6 +217,7 @@
     margin: 0;
     list-style: none;
     text-align: center;
+    transition: 0.3s ease all;
     li {
       position: relative;
       display: inline-block;
@@ -225,6 +226,7 @@
       margin: 0px;
       padding: 0;
       cursor: pointer;
+      transition: 0.3s ease all;
       button {
         font-size: 0;
         line-height: 0;
@@ -237,6 +239,7 @@
         border: 0;
         outline: none;
         background: transparent;
+        transition: 0.3s ease all;
       }
     }
   }
@@ -256,11 +259,13 @@
     background-color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: 0.3s ease all;
   }
 
   .slick-dots li.slick-active button:before {
     opacity: 0.75;
     color: black;
+    transition: 0.3s ease all;
   }
 }
 

@@ -142,4 +142,58 @@
       font-family: "Reg";
     }
   }
+
+  &__Scroll {
+    background-image: url("../../assets/Home/grain.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+    &>div{
+
+    }
+    &-focus {
+      color:rgba(255, 255, 255, 0.229);
+      text-align: center;
+      margin: 20px 0;
+      font-size: 75px;
+      font-family: "Med";
+      @include respond(md){
+        font-size: 35px;
+      }
+      &10 {
+        color: white;
+        transition: 0.5s ease-in all;
+       /*  font-size: 80px; */
+        @include respond(md){
+          font-size: 38px;
+        }
+      }
+      &21 {
+        transition: 0.5s ease-in all;
+        color: white;
+        /* font-size: 80px; */
+        @include respond(md){
+          font-size: 38px;
+        }
+      }
+      &32 {
+        transition: 0.5s ease-in all;
+        color: white;
+        /* font-size: 80px; */
+        @include respond(md){
+          font-size: 38px;
+        }
+      }
+      &43 {
+        transition: 0.5s ease-in all;
+        color: white;
+        /* font-size: 80px; */
+        @include respond(md){
+          font-size: 38px;
+        }
+      }
+    }
+  }
 }

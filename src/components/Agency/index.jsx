@@ -5,6 +5,7 @@ import Service from './Service';
 import Team from './Team';
 import Text from './Text';
 import Contact from "../Home/Contact";
+import Scroll from './Scroll';
 
 function index() {
     return (
@@ -14,7 +15,8 @@ function index() {
             <Service />
             <Team />
             <OurStory />
-            <Text />
+            {/* <Text /> */}
+            <Scroll />
             <Contact />
         </div>
     )
