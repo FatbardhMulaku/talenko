@@ -2,7 +2,8 @@ import React from 'react'
 import Buttons from '../Shared/Button/Buttons'
 import Diver from '../Shared/Divider'
 import Fade from 'react-reveal/Fade';
-import ServiceSlider from './ServiceSlider';
+/* import ServiceSlider from './ServiceSlider'; */
+import ServiceSlider2 from './ServiceSlider2';
 
 function Service() {
     return (
@@ -21,7 +22,7 @@ function Service() {
                     <Fade right className="my-auto">
                     <Buttons
                         name="See All"
-                        link="/Service"
+                        link="/Services"
                         margin="auto 10px"
                         hover="CHOOSE YOUR SERVICE"
                     />
@@ -31,8 +32,8 @@ function Service() {
 
                 
             </div>
-           
-                <ServiceSlider />
+                <ServiceSlider2 />
+               {/*  <ServiceSlider /> */}
             
 
         </div>

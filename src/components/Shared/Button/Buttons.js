@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:hover": {
       backgroundColor: "transparent",
+      border: "1px solid rgba(255, 255, 255, 0.116) !important",
       color: "white",
       "& .Btn-Class__active":{
         display:"none",

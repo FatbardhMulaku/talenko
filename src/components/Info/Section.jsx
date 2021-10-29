@@ -11,7 +11,7 @@ const data = [
 function Section(props) {
     return (
         <div className="Info-Section">
-            <div className={`container flex flex-col md:${props.styles}`}>
+            <div className={`container flex Service-Cards__row${props.styles}`}>
                 <div className="w-100 md:w-1/2 p-5 md:px-16 flex flex-col justify-center">
                     <h3 className="text-2xl md:text-4xl">Highlights</h3>
                     <Zoom top cascade>

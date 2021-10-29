@@ -11,8 +11,8 @@ function Cards() {
                     <div key={idx} className="Service-Cards__box BG">
                         <h5>0{idx + 1}</h5>
 
-                        <div className={`flex ${item.class} py-20 flex-col md:flex-row`}>
-                            <div className="w-100 md:w-2/5 my-auto">
+                        <div className={`flex Service-Cards__row${idx+1}`}>
+                            <div className="w-100 md:w-2/5 py-40 my-auto pl-0 md:pl-12">
                                 <Bounce >
                                     <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
                                 </Bounce>
@@ -21,9 +21,9 @@ function Cards() {
                                 </Bounce>
                             </div>
                             <Zoom>
-                                <div className="w-100 md:w-3/5 flex justify-center">
+                                <div className="w-100 md:w-3/5 flex justify-center items-center">
                                     <div className={`Service-CardsA${idx + 1} BG object-left-top`} />
-                                   {/*  <div className={`Service-CardsB${idx + 1} BG object-right-bottom`} /> */}
+                                    <div className={`Service-CardsB${idx + 1} BG object-right-bottom`} />
                                 </div>
                             </Zoom>
                         </div>

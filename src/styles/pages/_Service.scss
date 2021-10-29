@@ -14,7 +14,7 @@
     flex-direction: column;
     &__box {
       background-image: url("../../assets/Home/grain.jpg");
-      padding: 30px 50px;
+      padding: 50px;
       margin: 70px auto;
       @include respond(md){
         margin: 30px auto;
@@ -24,19 +24,30 @@
         display: flex;
         border-bottom: 1px solid white;
         padding-bottom: 30px;
-        font-size: 25px;
+        font: normal normal 25px/54px "Reg";
+        @include respond(md){
+          font-size: 18px;
+        }
       }
       h2{
         font: normal normal  45px/88px "Med";
+        @include respond(md){
+          font-size: 25px;
+        }
       }
       p{
         font: normal normal  18px/30px "Reg";
+        @include respond(md){
+          font-size: 15px;
+        }
       }
     }
     &A1{
         background-image: url("../../assets/Services/phone-mockup.png");
         width: 500px;
         height: 450px;
+        transform: scale(1.3);
+
         @include respond(sm){
             width: 310px;
             height: 300px;
@@ -46,28 +57,60 @@
         background-image: url("../../assets/Services/llaptopi2.png");
         width: 500px;
         height: 450px;
+        transform: scale(1.3);
+        z-index: 50;
         @include respond(sm){
             width: 320px;
             height: 300px;
+            transform: scale(0.96);
         }
+    }
+    &B2{
+      background-image: url("../../assets/Services/llaptopi2.1.png");
+      width: 500px;
+      height: 450px;
+      position: absolute;
+      transform: scale(1.30);
+      margin-left: 20px;
+      @include respond(sm){
+          width: 320px;
+          height: 300px;
+          transform: scale(0.96);
+      }
     }
     &A3{
         background-image: url("../../assets/Services/isnta.png");
         width: 500px;
         height: 450px;
+        transform: scale(1.3);
         @include respond(sm){
             width: 320px;
             height: 300px;
+            transform: scale(0.96);
         }
     }
     &A4{
         background-image: url("../../assets/Services/Business.png");
         width: 500px;
         height: 450px;
+        transform: scale(1.3);
         @include respond(sm){
             width: 320px;
             height: 300px;
+            transform: scale(0.96);
         }
+    }
+    &__row1,  &__row3{
+      flex-direction: row ;
+      @include respond(md){
+        flex-direction: column;
+      }
+    }
+    &__row2,  &__row4{
+      flex-direction: row-reverse ;
+      @include respond(md){
+        flex-direction: column;
+      }
     }
   }
 

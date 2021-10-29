@@ -18,7 +18,7 @@ function Work() {
                         <Buttons
                             name="See All"
                             hover="SEE OUR PROJECTS"
-                            link="/Service"
+                            link="/Work"
                             margin="auto 10px"
                         />
                     </Fade>

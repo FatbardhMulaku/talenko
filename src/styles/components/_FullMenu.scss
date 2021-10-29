@@ -124,6 +124,7 @@ background-color: black;
     display: flex;
     position: fixed;
     cursor: pointer;
+    z-index: 100;
     &:hover .Menu--box__line1 {
       transform: translateY(-20px);
       svg {

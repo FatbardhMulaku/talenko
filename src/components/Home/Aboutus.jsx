@@ -1,8 +1,24 @@
-import React from 'react';
+import React, {useState,useEffect, useCallback} from 'react';
 import MainHero from '../Shared/Hero/MainHero';
 import Zoom from 'react-reveal/Fade';
 
+const names = [
+    'Creative', 'Proffesional', 'Besties'
+]
+
 function Aboutus() {
+    const [newName, setnewName] = useState("Creative");
+
+    const shuffle = useCallback(() => {
+        const index = Math.floor(Math.random() * names.length);
+        setnewName(names[index]);
+    }, []);
+
+    useEffect(() => {
+        const intervalID = setInterval(shuffle, 2000);
+        return () => clearInterval(intervalID);
+    }, [shuffle])
+
     return (
         <MainHero BGimg="HomeAboutus">
             <div className="container w-screen h-screen flex flex-col text-white justify-center items-center">
@@ -15,7 +31,7 @@ function Aboutus() {
                 </svg>
 
                 <Zoom>
-                    <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">We are Creatives</h1>
+                    <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">We are {newName}</h1>
                 </Zoom>
                 <svg xmlns="http://www.w3.org/2000/svg" width="2.993" height="68.663" viewBox="0 0 1.993 68.663">
                     <path id="Path_18" data-name="Path 18" d="M1349.346,424.926h38.768v-1.993H1319.45v1.992Z" transform="translate(424.926 -1319.45) rotate(90)" fill="#fff" />

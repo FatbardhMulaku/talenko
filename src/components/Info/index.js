@@ -19,7 +19,7 @@ function index() {
                     </h1>
                 </Flip>
             </div>
-            <Section img="img1" styles="flex-row"/>
+            <Section img="img1" styles="1"/>
             <div className="container">
                 <Flip  >
                     <h1 className="Info__texth1 pb-16 pt-0 md:py-48 text-3xl sm:text-5xl lg:text-8xl px-5 lg:px-40">
@@ -29,7 +29,7 @@ function index() {
                     </h1>
                 </Flip>
             </div>
-            <Section img="img2" styles="flex-row-reverse"/>
+            <Section img="img2" styles="2"/>
             <ImgSection />
             <div className="Info_End-Img BG"/>
         </div>

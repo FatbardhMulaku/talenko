@@ -125,19 +125,29 @@
   padding: 20px 0 140px 0;
   margin-left: auto;
   margin-right: auto;
-  cursor: -webkit-grab; 
+  cursor: -webkit-grab;
   cursor: grab;
+  transition: 1s all ease-in;
   @include respond(md) {
     padding: 0px 0;
     margin-top: 0px;
     padding-bottom: 10px;
   }
+  &__full {
+    transition: 1s all ease-in;
+     &>div{
+      display: flex;
+      transition: 1s all ease-in;
+     }
+    
+  }
   &__box {
-    margin: 10px 10px;
-    /*   width: 400px !important; */
-    padding: 40px;
-    padding-top: 200px;
+    margin: 10px 180px 10px 10px;
+    width: 500px !important;
+    padding: 200px 40px 80px 0px;
     opacity: 1 !important;
+    transition: background 1s ease;
+    transition: 1s all ease-in;
     @include respond(md) {
       /*   width: 300px !important;
       height: fit-content !important; */
@@ -155,7 +165,7 @@
     p {
       font-size: 18px;
       font-family: "Reg";
-      width: 80%;
+      width: 90%;
       @include respond(md) {
         width: 100%;
       }
@@ -168,6 +178,7 @@
     /*     width: 100%;
     height: 100%; */
     z-index: 15;
+    transition: 1s all ease-in;
     transition: background 1s ease;
     background-position: right;
     background-size: contain;
@@ -179,94 +190,36 @@
     }
     &:hover {
       transition: background 1s ease;
+      transition: 1s all ease-in;
     }
   }
   &BG1 {
     &:hover {
       background-image: url("../../assets/Home/phone-mockup.png");
-    /*   border-color: white; */
+      /*   border-color: white; */
       transition: background 1s ease;
     }
   }
   &BG2 {
     &:hover {
       background-image: url("../../assets/Home/llaptopi2.png");
-    /*   border-color: white; */
+      /*   border-color: white; */
     }
   }
   &BG3 {
     &:hover {
       background-image: url("../../assets/Home/isnta.png");
-    /*   border-color: white; */
+      /*   border-color: white; */
     }
   }
   &BG4 {
     padding-bottom: 27px;
     &:hover {
       background-image: url("../../assets/Home/branding.png");
-    /*   border-color: white; */
+      /*   border-color: white; */
     }
   }
 
-  .slick-dots {
-    position: absolute;
-    bottom: -25px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    transition: 0.3s ease all;
-    li {
-      position: relative;
-      display: inline-block;
-      width: 20vw;
-      height: 3px;
-      margin: 0px;
-      padding: 0;
-      cursor: pointer;
-      transition: 0.3s ease all;
-      button {
-        font-size: 0;
-        line-height: 0;
-        display: block;
-        width: 20vw;
-        height: 3px;
-        padding: 5px;
-        cursor: pointer;
-        color: transparent;
-        border: 0;
-        outline: none;
-        background: transparent;
-        transition: 0.3s ease all;
-      }
-    }
-  }
-  .slick-dots li button:before {
-    font-family: "slick";
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20vw;
-    height: 3px;
-    content: "";
-    text-align: center;
-    opacity: 0.25;
-    color: black;
-    background-color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: 0.3s ease all;
-  }
-
-  .slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: black;
-    transition: 0.3s ease all;
-  }
 }
 
 .slick-track {
@@ -374,10 +327,12 @@
   }
 }
 
+//--------------------
 .HomeAboutus {
   h1 {
     font-size: 100px;
     font-family: "Med";
+    transition: 0.3s ease-in all;
     @include respond(md) {
       font-size: 50px;
     }
@@ -397,4 +352,24 @@
 }
 .Contact__input::placeholder {
   font-family: "Med";
+}
+
+
+
+// Service Sectio Scroll
+.scroll-container{
+    overflow-x: scroll !important;
+    scrollbar-width: thin !important; 
+    &::-webkit-scrollbar {
+      height: 2px;
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgb(110, 110, 110) !important;
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(255, 255, 255) !important;
+      border-radius: 20px;
+    }
 }
