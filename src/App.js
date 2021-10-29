@@ -5,7 +5,6 @@ import { Suspense } from "react";
 import SpinnerLoad from "./components/Shared/Spinner";
 
 function App() {
-  
   return (
     <div className="App">
        <Suspense fallback={<SpinnerLoad />}>

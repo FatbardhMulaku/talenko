@@ -20,21 +20,21 @@ function Service() {
                             a wide range of needs</h2>
                     </Fade>
                     <Fade right className="my-auto">
-                    <Buttons
-                        name="See All"
-                        link="/Services"
-                        margin="auto 10px"
-                        hover="CHOOSE YOUR SERVICE"
-                    />
+                        <Buttons
+                            name="See All"
+                            link="/Services"
+                            margin="auto 10px"
+                            hover="CHOOSE YOUR SERVICE"
+                        />
                     </Fade>
                 </div>
-                
 
-                
+
+
             </div>
-                <ServiceSlider2 />
-               {/*  <ServiceSlider /> */}
-            
+            <ServiceSlider2 />
+            {/*  <ServiceSlider /> */}
+
 
         </div>
     )

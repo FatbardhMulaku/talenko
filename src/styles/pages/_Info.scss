@@ -93,4 +93,21 @@
       height: 40vh;
     }
   }
+  &_2-Img {
+    background-image: url("../../assets/Info/MaskGroup26.jpg");
+    width: 100%;
+    height: 100vh;
+    @include respond(md) {
+      height: 60vh;
+    }
+    @include respond(sm) {
+      height: 50vh;
+    }
+    @include respond(xs) {
+      height: 40vh;
+    }
+  }
+  &-next{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+  }
 }

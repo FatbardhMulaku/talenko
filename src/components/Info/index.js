@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Flip from 'react-reveal/Fade';
 import Section from './Section';
 import ImgSection from './ImgSection';
+import Buttons from '../Shared/Button/Buttons';
 
 function index() {
     return (
@@ -31,7 +32,17 @@ function index() {
             </div>
             <Section img="img2" styles="2"/>
             <ImgSection />
+            <div className="Info_2-Img BG"/>
             <div className="Info_End-Img BG"/>
+            <div className="Info-next flex py-20 justify-center">
+                <Buttons 
+                    name="next to"
+                    hover="next to"
+                    link="/Info"
+                    margin="20px auto"
+                />
+            </div>
+           
         </div>
     )
 }
