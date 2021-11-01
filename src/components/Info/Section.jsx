@@ -1,5 +1,6 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 const data = [
     "Unique website experience thanks to scrolling animation and drone clip",
@@ -14,13 +15,13 @@ function Section(props) {
             <div className={`container flex Service-Cards__row${props.styles}`}>
                 <div className="w-100 md:w-1/2 p-5 md:px-16 flex flex-col justify-center">
                     <h3 className="text-2xl md:text-4xl">Highlights</h3>
-                    <Zoom top cascade>
+                    <Fade bottom cascade>
                         <div className="mt-10">
                             {data.map((item, idx) => (
                                 <p key={idx} className=" text-lg md:text-2xl mb-6">{item}</p>
                             ))}
                         </div>
-                    </Zoom>
+                    </Fade>
                 </div>
                 <div className="w-100 md:w-1/2">
                     <Zoom>

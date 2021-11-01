@@ -1,12 +1,12 @@
 import React from 'react'
 import Buttons from '../Shared/Button/Buttons';
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 function Contact() {
     return (
         <div className="Home_Contact BG text-white">
             <div className="container flex justify-center md:justify-end py-32 px-6 md:px-0">
-            <Zoom cascade>
+            <Fade bottom cascade>
                 <div className="w-100 md:w-1/2">
                     <h3 className="text-lg md:text-3xl mb-2 pr-4 md:pr-0">Do you have a project that needs some love?
                         Fill in the form below, or  holla at us at
@@ -26,7 +26,7 @@ function Contact() {
                         />
                     </form>
                 </div>
-                </Zoom>
+                </Fade>
             </div>
         </div>
     )

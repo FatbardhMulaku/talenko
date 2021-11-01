@@ -322,37 +322,66 @@
   }
   &A2,
   &A4 {
-    background-image: url("../../assets/Home/phone-mockup.png");
+    background-image: url("../../assets/Services/phone-mockup.png");
     width: 500px;
     height: 400px;
     align-self: start;
+    transform: scale(1.05);
     @include respond(md) {
       width: 300px;
       height: 250px;
+      transform: scale(1);
     }
   }
-  &B {
+  &B1, &B3 {
     background-image: url("../../assets/Home/MaskGroupT.png");
     width: 250px;
     height: 300px;
     align-self: flex-end;
   }
+  &B2,&B4{
+    background-image: url("../../assets/Services/llaptopi2.png");
+    width: 350px;
+    height: 350px;
+    align-self: flex-end;
+    transform: scale(1.1);
+    @include respond(md) {
+      width: 300px;
+       height: 300px;
+      transform: scale(1);
+    }
+  }
 }
 
 //--------------------
 .HomeAboutus {
-  h1 {
-    font-size: 100px;
-    font-family: "Med";
-    transition: 0.3s ease-in all;
-    @include respond(md) {
-      font-size: 50px;
-      
-    }
-  }
+ 
   p {
     font-size: 22px;
     font-family: "Reg";
+  }
+  svg{
+    @include xauto;
+  }
+  &__text{
+    h1 {
+      font-size: 100px;
+      font-family: "Med";
+      transition: 0.3s ease-in all;
+      @include respond(md) {
+        font-size: 50px;
+        
+      }
+    }
+    span{
+      font-size: 100px;
+      font-family: "Med";
+      transition: 0.3s ease-in all;
+      @include respond(md) {
+        font-size: 50px;
+        
+      }
+    }
   }
 }
 

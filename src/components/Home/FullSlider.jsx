@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FullSliderdata } from "./data";
-import { Link } from 'react-router-dom';
-import Zoom from 'react-reveal/Zoom';
-
+import { Link as Links } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
+import {  animateScroll as scroll } from 'react-scroll'
 
 export class FullSlider extends Component {
     render() {
@@ -36,7 +36,7 @@ export class FullSlider extends Component {
         };
         return (
             <div className="FullSlider BG py-20 pt-10 md:py-40">
-            <Zoom>
+            <Fade bottom>
                 <div className="container">
                     <Slider {...settings}>
                         {FullSliderdata.map((item, i) => {
@@ -55,19 +55,19 @@ export class FullSlider extends Component {
                                         <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
                                         <p className="text-base md:text-lg mb-4">{item.desc}</p>
 
-                                        <Link to="#">RIDE ALONG</Link>
+                                        <Links onClick={() => scroll.scrollToTop()} to="/Info">RIDE ALONG</Links>
                                     </div>
 
                                     <div>
                                         <div className={`FullSliderA${i+1} BG object-left-top`}/>
-                                        <div className="FullSliderB BG object-right-bottom"/>
+                                        <div className={`FullSliderB${i+1} BG object-right-bottom`}/>
                                     </div> 
                                 </div>
                             )
                         })}
                     </Slider>
                 </div>
-                </Zoom>    
+                </Fade>    
             </div>
         )
     }

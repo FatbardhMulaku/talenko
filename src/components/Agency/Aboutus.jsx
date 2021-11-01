@@ -1,9 +1,9 @@
 import React, {useState,useEffect, useCallback} from 'react';
 import MainHero from '../Shared/Hero/MainHero';
-import Zoom from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 
 const names = [
-    'Creative', 'Proffesional', 'Besties'
+    'Creative', 'Professional', 'Besties'
 ]
 
 function Aboutus() {
@@ -21,6 +21,7 @@ function Aboutus() {
 
     return (
         <MainHero BGimg="HomeAboutus">
+        <Fade bottom cascade>
             <div className="container w-screen h-screen flex flex-col text-white justify-center items-center">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="180.893" height="55.947" viewBox="0 0 161.893 55.947">
@@ -30,22 +31,26 @@ function Aboutus() {
                     </g>
                 </svg>
 
-                <Zoom>
-                    <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">We are <span style={{color:"#FF156F"}}>{newName}</span></h1>
-                </Zoom>
+               
+                    <div className="HomeAboutus__text flex w-full">
+                        <div className="w-1/2 flex justify-end pr-4"> <h1 className="mt-4 text-left text-3xl md:text-8xl mb-10 mt-10">We are </h1></div>
+                        <div className="w-1/2 flex justify-self-start"><span style={{color:"#FF156F"}} className="mt-4 text-left text-3xl md:text-8xl mb-10 mt-10">{newName}</span></div>
+                    </div>
+               
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.993" height="68.663" viewBox="0 0 1.993 68.663">
                     <path id="Path_26" data-name="Path 26" d="M1349.346,424.926h38.768v-1.993H1319.45v1.992Z" transform="translate(424.926 -1319.45) rotate(90)" fill="#ff156f" />
                 </svg>
 
-                <Zoom>
+               
                     <p className="text-center text-lg md:text-2xl mt-20">
                         Lorem ipsum dolor sit amet, consectetur<br />
                         adipiscing sed do eiusmod tempor incididunt<br />
                         ut labore et dolore ips.
                     </p>
-                </Zoom>
+               
 
             </div>
+            </Fade>
         </MainHero>
     )
 }

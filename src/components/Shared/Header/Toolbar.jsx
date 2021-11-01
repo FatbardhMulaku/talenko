@@ -10,6 +10,7 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 /* import "./Toolbar.css"; */
 import { ReactComponent as Btn } from "../../../assets/Home/btn_head.svg";
 
+
 const Lang = ["English","German","French", "Albanian"];
 
 const useStyles = makeStyles((theme) => ({
