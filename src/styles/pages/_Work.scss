@@ -7,9 +7,17 @@
     }
     h1 {
       font: normal normal  120px/148px "Med";
+      @include respond(md) {
+       font-size: 38px;
+       line-height: normal;
+      }
     }
     p {
       font: normal normal  22px/37px "Reg";
+      @include respond(md) {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -25,12 +33,24 @@
     }
     h1{
       font: normal normal  100px/123px "Reg";
+      @include respond(md) {
+        font-size: 35px;
+        line-height: 30px;
+      }
     }
     p{
       font: normal normal  22px/37px "Reg";
+      @include respond(md) {
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
     h3{
       font: normal normal  45px/55px"Reg";
+      @include respond(md) {
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -38,6 +58,10 @@
   &-ContactInfo{
     h3{
       font: normal normal  45px/65px "Med";
+      @include respond(md) {
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
     p{
       font: normal normal  18px/35px "Reg";

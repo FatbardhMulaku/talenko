@@ -2,13 +2,16 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-background-color: black;
+  background-color: black;
   background-image: linear-gradient(to right, #00000020, #00000020),
     url("../../assets/grain.png");
   background-position: center;
   background-size: cover;
   z-index: 50000;
   transition: 0.3s ease-in all;
+  @include respond(sm) {
+    margin-bottom: 30px;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -26,9 +29,16 @@ background-color: black;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     width: 90%;
     font-size: 60px;
-    padding: 30px 10px;
-    p{
-        font: normal normal  57px/70px "Reg";
+
+    @include respond(sm) {
+      padding: 15px 10px;
+    }
+    p {
+      font: normal normal 57px/70px "Reg";
+      @include respond(md) {
+        font-size: 30px;
+        font: normal normal 25px/20px "Reg";
+      }
     }
     &:hover {
       color: white;
