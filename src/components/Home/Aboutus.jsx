@@ -3,7 +3,7 @@ import MainHero from '../Shared/Hero/MainHero';
 import Zoom from 'react-reveal/Fade';
 
 const names = [
-    'Creative', 'Professional', 'Besties'
+    'CONSISTENCY', 'SIMPLICITY', 'CLARITY'
 ]
 
 function Aboutus() {
@@ -41,9 +41,12 @@ function Aboutus() {
                 </svg>
                 <Zoom>
                     <p className="text-center text-lg md:text-2xl mt-20">
-                        Lorem ipsum dolor sit amet, consectetur<br />
-                        adipiscing sed do eiusmod tempor incididunt<br />
-                        ut labore et dolore ips.
+
+                        Talenko // a digital agency operating
+                        in Prishtina, Kosovo.<br /> An agency, who
+                        through visual and verbal design,<br />
+                        thrives on giving companies the most<br />
+                        creative representation of their identity<br />
                     </p>
                 </Zoom>
 

@@ -14,7 +14,7 @@
     & > h1 {
       color: #fff !important;
       text-align: center;
-      font-size: 55px;
+      font-size: 75px;
       font-family: "Med";
       letter-spacing: 0px;
       @include respond(md) {
@@ -150,6 +150,10 @@
   }
   &__full {
     transition: 1s all ease-in;
+    padding-left: 8vw;
+    @include respond(md){
+      padding-left: 4vw;
+    }
      &>div{
       display: flex;
       transition: 1s all ease-in;
@@ -157,9 +161,9 @@
     
   }
   &__box {
-    margin: 10px 180px 10px 10px;
+    margin: 10px 218px 10px 10px;
     width: 500px !important;
-    padding: 200px 40px 80px 0px;
+    padding: 200px 20px 80px 0px;
     opacity: 1 !important;
     transition: background 1s ease;
     transition: 1s all ease-in;
@@ -180,7 +184,7 @@
     p {
       font-size: 18px;
       font-family: "Reg";
-      width: 90%;
+      
       @include respond(md) {
         width: 100%;
       }
@@ -408,11 +412,20 @@
       font-size: 22px;
     }
   }
+  a{
+    font-size: 32px;
+    font-family: "Reg";
+    @include respond(md) {
+      font-size: 22px;
+    }
+  }
 }
 .Contact__input::placeholder {
   font-family: "Med";
 }
-
+.Contact__input{
+  outline: none;
+}
 
 
 // Service Sectio Scroll

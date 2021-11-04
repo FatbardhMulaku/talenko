@@ -3,10 +3,10 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
 const data = [
-    "Unique website experience thanks to scrolling animation and drone clip",
-    "Complex range of services presented in a tangible and interactive way",
-    "New look & feel for the cosmetics product portfolio",
-    "Accompaniment of a traditional cosmetics company in a new business chapter"
+    "- Unique website experience thanks to scrolling animation and drone clip",
+    "- Complex range of services presented in a tangible and interactive way",
+    "- New look & feel for the cosmetics product portfolio",
+    "- Accompaniment of a traditional cosmetics company in a new business chapter"
 ];
 
 function Section(props) {

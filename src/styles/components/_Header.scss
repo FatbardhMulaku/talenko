@@ -8,6 +8,10 @@
     &:hover path {
       stroke: #f24200;
     }
+    &:hover text {
+      outline: none;
+      font-weight: 300;
+    }
     @include respond(md) {
       width: 109px;
       height: 30px;
@@ -42,6 +46,10 @@
           }
           &:hover path {
             stroke: #F2B100;
+          }
+          &:hover text {
+            outline: none;
+            font-weight: 300;
           }
     }
     &info{

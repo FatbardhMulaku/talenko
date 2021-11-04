@@ -3,9 +3,8 @@ import MainHero from '../Shared/Hero/MainHero';
 import Fade from 'react-reveal/Fade';
 
 const names = [
-    'Creative', 'Professional', 'Besties'
+    'CONSISTENCY', 'SIMPLICITY', 'CLARITY'
 ]
-
 function Aboutus() {
     const [newName, setnewName] = useState("Creative");
 

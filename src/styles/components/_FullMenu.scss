@@ -29,7 +29,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     width: 90%;
     font-size: 60px;
-
+    padding: 30px 20px;
     @include respond(sm) {
       padding: 15px 10px;
     }

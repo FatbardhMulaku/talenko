@@ -44,21 +44,25 @@ export const TeamData = [
     [
         {
             name: "Valon Ajvazi",
+            mail:"Valon",
             title: "CEO",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },
         {
             name: "Eris Visoka",
+            mail:"Eris",
             title: "Head of Design",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },
         {
             name: "Endrit Ahmeti",
+            mail:"Endrit",
             title: "Ui/Ux  Designer",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },
         {
             name: "Albin Musliu",
+            mail:"Albin",
             title: "Head of Development",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },
@@ -66,16 +70,19 @@ export const TeamData = [
     [
         {
             name: "Fatos Ajvazi",
+            mail:"Fatos",
             title: "Project Manager",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },
         {
             name: "Pranvera Saliu",
+            mail:"Pranvera",
             title: "Web Developer",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },
         {
             name: "Vineta Leci",
+            mail:"Vineta",
             title: "Ui/Ux  Designer",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
         },

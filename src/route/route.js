@@ -15,12 +15,14 @@ import Agency from "../pages/Agency";
 import Contact from "../pages/Contact";
 import Info from "../pages/Info";
 
-const Routes = () => {
+
+const Routes = (props) => {
   const [open, setOpen] = useState(false)
 
 
-  const handelClick = () => {
-    setOpen(!open)
+  const handelClick = (e) => {
+    setOpen(!open);
+    props.scroll(open);
   }
 
   return (

@@ -9,7 +9,7 @@ export class ServiceSlider2 extends Component {
         return (
             <div className="ServiceSlider ">
                 <Fade bottom>
-                    <div className="container ServiceSlider__full">
+                    <div className="ServiceSlider__full">
                         <ScrollContainer hideScrollbars={false} className="scroll-container">
                             {ServiceData.map((item, i) => {
                                 return (

@@ -9,11 +9,20 @@ const link = [
     { name: "Contact", link: "Contact" }
 ]
 
+ 
+
+
 function index(props) {
 
+/*     const HandleX = (props) => (
+        props.handleOpen
+        scroll.scrollTo(10);
+    ) */
+       
+
     return (
-        <div className="FullMenu flex justify-center items-center">
-            {props.open && <span to="#" onClick={props.handleOpen} className="FullMenu__close">
+        <div className="FullMenu flex justify-center items-center" style={{'overflow-y': "scroll"}}>
+            {props.open && <span onClick={props.handleOpen} className="FullMenu__close">
 
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                     <path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z" stroke="#fff" />

@@ -1,5 +1,6 @@
 import React from 'react'
-import ContactInfo from './ContactInfo'
+import Contact from '../Home/Contact'
+/* import ContactInfo from './ContactInfo' */
 import DotAgency from './DotAgency'
 import Hero from './Hero'
 
@@ -8,7 +9,8 @@ function index() {
         <div className="Work">
             <Hero />
             <DotAgency />
-            <ContactInfo />
+           {/*  <ContactInfo /> */}
+            <Contact />
         </div>
     )
 }

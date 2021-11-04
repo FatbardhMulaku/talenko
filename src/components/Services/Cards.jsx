@@ -1,5 +1,5 @@
 import React from 'react'
-import { ServiceData } from "../Home/data";
+import { ServiceData } from "./data";
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
@@ -13,7 +13,7 @@ function Cards() {
 
                         <div className={`flex Service-Cards__row${idx + 1}`}>
                             <Fade bottom cascade>
-                                <div className="w-100 md:w-2/5 py-40 my-auto pl-0 md:pl-12">
+                                <div className="w-100 md:w-2/5 py-40 my-auto px-0 md:px-16">
 
                                     <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
 

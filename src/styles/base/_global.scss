@@ -12,4 +12,9 @@
 .Btn-Class:hover{
     animation-duration: 3s;
     animation-name: BtnEffect;
+    text-transform: uppercase;
+}
+
+.Btn-Class__active{
+    text-transform: uppercase;
 }

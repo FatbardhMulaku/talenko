@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     transition: "all 0.4s ease-in",
     padding: "0 0 2px",
     top: "auto",
-    borderBottom: "1px solid #A8A8A8"
+    borderBottom: "1px solid rgba(255, 255, 255, 0.5);"
   },
   [theme.breakpoints.down("xs")]: {
     box1: {

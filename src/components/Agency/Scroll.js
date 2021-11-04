@@ -3,9 +3,9 @@ import { Stickyroll } from '@stickyroll/stickyroll';
 
 const headlines = [
     "Our Promises",
-    "Eine flexible und unkompliziert Partnerscha",
-    "Rund um die Uhr erreichbar zu sein.",
-    "Let's continue with the next lesson!"
+    "A flexible and uncomplicated partnership",
+    "Available at all times",
+    "Ecient work in planning & implementation"
 ]
 
 const Scroll = () => {

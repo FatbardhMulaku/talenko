@@ -6,28 +6,33 @@ function Hero() {
     return (
         <MainHero BGimg="Service__hero">
             <Fade bottom cascade>
-                <div className="container w-screen h-screen flex flex-col text-white justify-center items-center">
+            <div className="container w-screen h-screen flex flex-col text-white justify-end px-6 md:px-0">
+               {/*  <Zoom top cascade> */}
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="53.128" height="53.128" viewBox="0 0 53.128 53.128">
+                            <path id="Path_715" data-name="Path 715" d="M26.35,29.859H53.128v1.785H26.35a.754.754,0,0,0-.532,1.287L44.752,51.866,43.49,53.128,0,9.638,1.263,8.377,20.2,27.311a.754.754,0,0,0,1.287-.532V0h1.785V26.778a.754.754,0,0,0,1.287.533L43.49,8.377l1.262,1.262L25.818,28.574a.752.752,0,0,0,.532,1.285Z" transform="translate(0 53.128) rotate(-90)" fill="#0FF1CA" />
+                        </svg>
+                        <h1 className="text-left text-3xl md:text-8xl mb-10 pl-5 md:pl-2 pt-4 md:pt-1">Our Services</h1>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="113.733" height="113.733" viewBox="0 0 113.733 113.733">
-                        <path id="Path_15" data-name="Path 15" d="M1217.83,302.157h40.535v-2.7H1217.83a1.142,1.142,0,0,1-.805-1.948l28.661-28.662-1.911-1.91-65.831,65.833,1.912,1.909,28.66-28.661a1.141,1.141,0,0,1,1.949.805v40.536h2.7V306.822a1.141,1.141,0,0,1,1.948-.807l28.66,28.661,1.911-1.91L1217.025,304.1a1.139,1.139,0,0,1,.805-1.946Z" transform="translate(701.048 1135.416) rotate(-135)" fill="#0ff1ca" />
-                    </svg>
+                    </div>
+               {/*  </Zoom> */}
 
 
-                    {/* <Zoom  > */}
-                    <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">Through Sunrises & Sunsets</h1>
-                    {/*   </Zoom> */}
+               {/*  <Zoom> */}
+                    <div className="flex flex-row mb-48">
+                        <div className="w-40 h-3 hidden md:inline" />
+                        <p className="text-left text-lg md:text-2xl">
+                            Lorem ipsum dolor sit amet, consectetur madi piscing sed <br />
+                            do eiusmod tempor incididunt ut labore et dolore ips.<br />
+                            ncididunt ut labore et dolore ips.<br />
+                        </p>
+                    </div>
+               {/*  </Zoom> */}
 
-                    {/* <Zoom> */}
-                    <p className="text-center text-lg md:text-2xl mt-10">
-                        Check out what we can do for you below<br />
-                        and feel free to contact us.
-                    </p>
-                    {/*  </Zoom> */}
-
-                </div>
+            </div>
             </Fade>
-            <svg className="HrLine" xmlns="http://www.w3.org/2000/svg" width="1.5" height="264.072" viewBox="0 0 1.5 264.072">
-                <path id="Path_734" data-name="Path 734" d="M2126.854,695.337c-.078,263.953,0,264.072,0,264.072" transform="translate(-2126.104 -695.337)" fill="none" stroke="#0ff1ca" stroke-width="1.5" />
+            <svg className="Work-HrLine" xmlns="http://www.w3.org/2000/svg" width="4.5" height="274.016" viewBox="0 0 4.5 274.016">
+                <line id="Line_31" data-name="Line 31" x2="3" y2="274" transform="translate(0.75 0.008)" fill="none" stroke="#0FF1CA" stroke-width="1.5" />
             </svg>
 
         </MainHero>

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "8px 40px",
     border: "1px solid white",
     color: "white",
+    textTransform: "capitalize",
   
     margin: (props) => props.margin,
     "& > .MuiButton-label": {
@@ -37,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     "& .Btn-Class__hover":{
-      display:"none"
+      display:"none",
+      textTransform: "capitalize",
     },
     [theme.breakpoints.down("sm")]: {
       padding: "5px 20px",
