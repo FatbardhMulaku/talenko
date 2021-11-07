@@ -17,6 +17,7 @@
       height: 30px;
     }
     &home{
+      transition: 0.5s ease-in all;
         &:hover {
             stroke: #f24200;
           }
@@ -41,6 +42,7 @@
           }
     }
     &work{
+      transition: 0.5s ease-in all;
         &:hover {
             stroke: #F2B100;
           }

@@ -38,7 +38,7 @@ export class FullSlider extends Component {
             <div className="FullSlider BG py-20 pt-10 md:py-40">
             <Fade bottom>
                 <div className="container">
-                    <Slider {...settings}>
+                   {/*  <Slider {...settings}> */}
                         {FullSliderdata.map((item, i) => {
                             return (
                                 <div key={i} className="FullSlider__Box">
@@ -53,19 +53,20 @@ export class FullSlider extends Component {
 
                                         <h5 className="text-lg md:text-2xl mb-0">{item.subtitle}</h5>
                                         <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
-                                        <p className="text-base md:text-lg mb-4">{item.desc}</p>
+                                        <p className="text-base md:text-lg mb-20">{item.desc}</p>
 
-                                        <Links onClick={() => scroll.scrollToTop()} to="/Info">RIDE ALONG</Links>
+                                        <Links onClick={() => scroll.scrollToTop()} to="/Info">EXPLORE THE WEBSITE</Links>
                                     </div>
 
                                     <div>
-                                        <div className={`FullSliderA${i+1} BG object-left-top`}/>
-                                        <div className={`FullSliderB${i+1} BG object-right-bottom`}/>
+                                        <div className={`FullSlider-img`}/>
+                                       {/*  <div className={`FullSliderA${i+1} BG object-left-top`}/>
+                                        <div className={`FullSliderB${i+1} BG object-right-bottom`}/> */}
                                     </div> 
                                 </div>
                             )
                         })}
-                    </Slider>
+                   {/*  </Slider> */}
                 </div>
                 </Fade>    
             </div>

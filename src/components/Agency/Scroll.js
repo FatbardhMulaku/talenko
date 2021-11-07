@@ -5,7 +5,7 @@ const headlines = [
     "Our Promises",
     "A flexible and uncomplicated partnership",
     "Available at all times",
-    "Ecient work in planning & implementation"
+    "Effcient work in planning & implementation"
 ]
 
 const Scroll = () => {

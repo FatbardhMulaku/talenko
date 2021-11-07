@@ -22,9 +22,8 @@ function Hero() {
                     <div className="flex flex-row mb-48">
                         <div className="w-40 h-3 hidden md:inline" />
                         <p className="text-left text-lg md:text-2xl">
-                            Lorem ipsum dolor sit amet, consectetur madi piscing sed <br />
-                            do eiusmod tempor incididunt ut labore et dolore ips.<br />
-                            ncididunt ut labore et dolore ips.<br />
+                        We specialize in digitalizing businesses through <br /> brand, design and web development! 
+                           
                         </p>
                     </div>
                {/*  </Zoom> */}

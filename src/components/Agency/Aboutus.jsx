@@ -6,7 +6,7 @@ const names = [
     'CONSISTENCY', 'SIMPLICITY', 'CLARITY'
 ]
 function Aboutus() {
-    const [newName, setnewName] = useState("Creative");
+    const [newName, setnewName] = useState("CONSISTENCY");
 
     const shuffle = useCallback(() => {
         const index = Math.floor(Math.random() * names.length);
@@ -31,9 +31,9 @@ function Aboutus() {
                 </svg>
 
                
-                    <div className="HomeAboutus__text flex w-full">
-                        <div className="w-1/2 flex justify-end pr-4"> <h1 className="mt-4 text-left text-3xl md:text-8xl mb-10 mt-10">We are </h1></div>
-                        <div className="w-1/2 flex justify-self-start"><span style={{color:"#FF156F"}} className="mt-4 text-left text-3xl md:text-8xl mb-10 mt-10">{newName}</span></div>
+                    <div className="HomeAboutus__text text-center">
+                        <h1 className="mt-4 text-center text-3xl md:text-8xl mb-10 mt-10">{newName} </h1>
+
                     </div>
                
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.993" height="68.663" viewBox="0 0 1.993 68.663">

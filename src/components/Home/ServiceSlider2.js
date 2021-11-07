@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ServiceData } from "./data";
+import { ServiceData } from "../Services/data";
 import ScrollContainer from 'react-indiana-drag-scroll'
 import { Tooltip } from "@material-ui/core"
 import Fade from 'react-reveal/Fade';

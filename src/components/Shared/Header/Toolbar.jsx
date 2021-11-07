@@ -29,18 +29,19 @@ const useStyles = makeStyles((theme) => ({
   box1: {
     boxShadow: "none ",
     backgroundColor: (props) => props.Bcolor,
-    transition: "all 0.6s ease-out",
+    transition: "all 0.4s ease-out",
     padding: "0 0 2px",
     top: "auto",
     color: "white",
-    borderBottom: "1px solid #A8A8A8"
+    borderBottom: "1px solid #A8A8A8",
+    
   },
   box2: {
     backgroundColor: "#000 !important ",
     transition: "all 0.4s ease-in",
     padding: "0 0 2px",
     top: "auto",
-    borderBottom: "1px solid rgba(255, 255, 255, 0.5);"
+    borderBottom: "1px solid rgba(255, 255, 255, 0.3);",
   },
   [theme.breakpoints.down("xs")]: {
     box1: {
@@ -74,7 +75,7 @@ const Toolbar = (props) => {
         <Logo style="logo_header" />
         <div className="flex">
 
-          <div className="flex searchIcon mr-4 md:mr-8 my-auto cursor-pointer DownMenu">
+          <div className={trigger ? "hidden":"flex searchIcon mr-4 md:mr-8 my-auto cursor-pointer DownMenu"}>
             <svg xmlns="http://www.w3.org/2000/svg" width="23.426" height="23.424" viewBox="0 0 25.426 25.424">
               <g id="Group_6" data-name="Group 6" transform="translate(-928.505 -407.348)">
                 <g id="Group_5" data-name="Group 5" transform="translate(928.505 407.348)">
@@ -100,8 +101,8 @@ const Toolbar = (props) => {
             </div>
 
           </div>
-
-          <Btn className={`Header__btn Header__btn${props.pageColor}`} />
+                  
+          <Btn className={trigger ? "hidden":`Header__btn Header__btn${props.pageColor}`} />
 
         </div>
 

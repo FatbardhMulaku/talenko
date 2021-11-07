@@ -6,8 +6,9 @@ export const ServiceData = [
 ];
 
 export const FullSliderdata = [
-    { subtitle: "UI/UX / WEB DEVELOPMENT", title: "Auto Hebeisen AG", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore et dolore ips. Lorem ipsum dolor sit amet, consectetur adipiscing sed do." },
-    { subtitle: "CUSTOM DEVELOPMENT", title: "Tech Store AG", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore et dolore ips. Lorem ipsum dolor sit amet, consectetur adipiscing sed do." },
-    { subtitle: "SOCIAL MEDIA", title: "Auto Hebeisen AG", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore et dolore ips. Lorem ipsum dolor sit amet, consectetur adipiscing sed do." },
-    { subtitle: "BRANDING", title: "Tech Store AG", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore et dolore ips. Lorem ipsum dolor sit amet, consectetur adipiscing sed do." },
+    {
+        subtitle: "UI/UX / WEB DEVELOPMENT/BRANDING",
+        title: "Dot Agency",
+        desc: "Dot Agency is a web-design & development studio operating in Switzerland.  Our task was therefore to deliver a highly customized and fully integrated web development solution at a competitive cost, by bringing brand awareness, web-designing  and customer interaction."
+    },
 ]

@@ -12,11 +12,7 @@ function index() {
             <div className="container">
                 <Fade bottom  >
                     <h1 className="Info__texth1 py-16 md:py-40 text-3xl sm:text-5xl lg:text-8xl px-5 lg:px-16">
-                        Garage Hebeisen has been
-                        at your side with help and
-                        advice on questions about
-                        vehicles of all kinds since
-                        the 1940s.
+                    Dot Agency is a web-design & development studio operating in Switzerland.
                     </h1>
                 </Fade>
             </div>

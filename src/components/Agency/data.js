@@ -93,15 +93,15 @@ export const OurStoryData = [
     {
         title: "Where we stand",
         items: [
-            { item: "We've always known that design has the fundamental ability to change the way people live, work and play. We've seen it happen, and we've made it happen." },
-            { item: "But time has shown us that not all change is good. Not all movement is forward. There's growing complexity meaning many solutions spark a new set of problems. Creating something new, but not always better." },
+            { item: "We are a digital agency that works with you throughout the entire process and be based on a solid foundation of mutual understanding" },
+            { item: "Time has shown us that not all change is good. Not all movement is forward. There's growing complexity meaning many solutions spark a new set of problems. Creating something new, but not always better." },
         ]
     },
     {
         title: "Our story",
         items: [
-            { item: "From our roots in Denmark, we grew across Scandinavia, driven by the values and principles of Nordic design." },
-            { item: "Since then, we’ve continued to evolve. Coming together with like-minded companies in different areas of the world. Growing our footprint with studios in Europe, Asia, and North America. Now, you can find us all over the world." },
+            { item: "Talenko started with the idea of bringing something different and better in our country's market." },
+            { item: "What makes us different? Our passion stems from our people. We value diversity and highly believe that different backgrounds , ideas and prespective are what makes us stronger." },
         ]
     }
 ];

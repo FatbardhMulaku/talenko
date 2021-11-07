@@ -193,7 +193,8 @@
   &BG1,
   &BG2,
   &BG3,
-  &BG4 {
+  &BG4, 
+  &BG5{
     /*     width: 100%;
     height: 100%; */
     z-index: 15;
@@ -214,14 +215,14 @@
   }
   &BG1 {
     &:hover {
-      background-image: url("../../assets/Home/phone-mockup.png");
+      background-image: url("../../assets/Home/web.png");
       /*   border-color: white; */
       transition: background 1s ease;
     }
   }
   &BG2 {
     &:hover {
-      background-image: url("../../assets/Home/llaptopi2.png");
+      background-image: url("../../assets/Home/brand.png");
       /*   border-color: white; */
     }
   }
@@ -232,9 +233,17 @@
     }
   }
   &BG4 {
-    padding-bottom: 27px;
     &:hover {
-      background-image: url("../../assets/Home/branding.png");
+      background-image: url("../../assets/Home/eco.png");
+      /*   border-color: white; */
+    }
+  }
+  &BG5 {
+    /* margin-right: 50px; */
+  /*   padding-bottom: 50px; */
+    &:hover {
+     
+      background-image: url("../../assets/Services/seo.png");
       /*   border-color: white; */
     }
   }
@@ -247,7 +256,7 @@
 
 .HomeHero {
   background-image: linear-gradient(to right, #00000045, #00000045),
-    url("../../assets/Home/hero.webp");
+    url("../../assets/Home/homevid.gif");
   display: flex;
 }
 
@@ -286,11 +295,10 @@
     & > div:last-child {
       width: 59%;
       display: flex;
-      justify-content: space-around;
+      align-items: center;
+      justify-content: center;
       @include respond(md) {
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
         padding: 0px 10px 70px 10px;
       }
     }
@@ -319,7 +327,7 @@
       font-family: "Reg";
     }
   }
-  &A1,
+/*   &A1,
   &A3 {
     background-image: url("../../assets/Home/MaskGroupM.png");
     width: 520px;
@@ -329,8 +337,8 @@
       width: 300px;
       height: 225px;
     }
-  }
-  &A2,
+  } */
+/*   &A2,
   &A4 {
     background-image: url("../../assets/Services/phone-mockup.png");
     width: 500px;
@@ -360,6 +368,18 @@
        height: 300px;
       transform: scale(1);
     }
+  } */
+  &-img{
+    background-image: url("../../assets/Home/fullslider-img.png");
+    width: 900px;
+    height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include respond(md){
+      width: 320px;
+      height: 280px;
+    }
   }
 }
 
@@ -379,17 +399,6 @@
   }
   &__text{
     h1 {
-      font-size: 100px;
-      font-family: "Med";
-      transition: 0.3s ease-in all;
-      @include respond(md) {
-        font-size: 50px;
-      }
-      @include respond(sm) {
-        font-size: 30px;
-      }
-    }
-    span{
       font-size: 100px;
       font-family: "Med";
       transition: 0.3s ease-in all;
@@ -434,16 +443,21 @@
     scrollbar-width: thin !important; 
     &::-webkit-scrollbar {
       height: 2px;
+      
       border-radius: 20px;
     }
     &::-webkit-scrollbar-track {
-      background: rgb(110, 110, 110) !important;
+      background: rgb(51, 51, 51) !important;
       border-radius: 20px;
+      
+      
     }
     &::-webkit-scrollbar-thumb {
       background-color: rgb(255, 255, 255) !important;
       border-radius: 20px;
+     
     }
+
 }
 
 
