@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { animateScroll as scroll} from 'react-scroll'
 const link = [
     { name: "Home", link: "" },
     { name: "Services", link: "Services" },
@@ -11,18 +11,17 @@ const link = [
 
  
 
+function index({handleOpen, open}) {
 
-function index(props) {
-
-/*     const HandleX = (props) => (
-        props.handleOpen
-        scroll.scrollTo(10);
-    ) */
+    function HandleX (){
+        handleOpen();
+        scroll.scrollToTop();
+    }
        
 
     return (
         <div className="FullMenu flex justify-center items-center" style={{'overflow-y': "scroll"}}>
-            {props.open && <span onClick={props.handleOpen} className="FullMenu__close">
+            {open && <span onClick={handleOpen} className="FullMenu__close">
 
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                     <path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z" stroke="#fff" />
@@ -33,7 +32,7 @@ function index(props) {
 
                 {link.map((item, index) => {
                     return (
-                        <Link className="FullMenu__item flex justify-between" onClick={props.handleOpen} to={`/${item.link}`} key={index}>
+                        <Link className="FullMenu__item flex justify-between" onClick={HandleX} to={`/${item.link}`} key={index}>
                             <p>{item.name}</p>
                             <span className="my-auto mr-6 FullMenu__item--icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.316" height="23.609" viewBox="0 0 24.316 23.609">
