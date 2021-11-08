@@ -57,7 +57,7 @@ export const TeamData = [
         {
             name: "Endrit Ahmeti",
             mail:"Endrit",
-            title: "Ui/Ux  Designer",
+            title: "UI/UX Designer",
             desc: "If you can hear the music out of the office walls, just know it is him."
         },
        /*  {
@@ -83,7 +83,7 @@ export const TeamData = [
         {
             name: "Vineta Leci",
             mail:"Vineta",
-            title: "Ui/Ux  Designer",
+            title: "UI/UX Designer",
             desc: "If I do something I either hit it on the bullseye or in your eye, there’s no in between. "
         },
     ]
