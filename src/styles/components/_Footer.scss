@@ -1,19 +1,19 @@
 .Footer {
   &__links {
     border-radius: 10px;
-    padding: 10px 25px;
-    margin: auto 3px;
+    margin: 0 30px;
     transition: 0.3s ease-in all;
     font: normal normal normal 18px/42px "Reg";
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 0.8;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.103);
+     
+      color: #ffffffb6;
     }
     @include respond(sm) {
       font-size: 14px;
-      padding: 5px 12px;
+      margin: 0 10px;
     }
   }
   p {

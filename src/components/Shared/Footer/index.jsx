@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../Logo/Logo'
-
+import {  animateScroll as scroll } from 'react-scroll'
 
 const FootetLinks = [
     { name: "Home", link: "" },
@@ -19,7 +19,7 @@ function index() {
                 <div className="flex justify-center md:justify-end mt-8 md:mt-0">
                     {FootetLinks.map((item, index) => {
                         return (
-                            <Link className="Footer__links" to={`${item.link}`} key={index}>{item.name}</Link>
+                            <Link onClick={() => scroll.scrollToTop()} className="Footer__links" to={`${item.link}`} key={index}>{item.name}</Link>
                         )
                     })}
                 </div>
