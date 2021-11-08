@@ -12,7 +12,7 @@ function index() {
             <div className="container">
                 <Fade bottom  >
                     <h1 className="Info__texth1 py-16 md:py-40 text-3xl sm:text-5xl lg:text-8xl px-5 lg:px-16">
-                    Dot Agency is a web-design & development studio operating in Switzerland.
+                    Dot Agency is a web-design & development studio operating in Switzerland.
                     </h1>
                 </Fade>
             </div>
