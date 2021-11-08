@@ -97,6 +97,15 @@
         transform: translateY(0px);
       }
     }
+    // per me ba si ghysem card
+    &>div:last-child{
+      &>div:last-child{
+        // hapsira permi edhe perfuni kolones 2
+      &>div > div:first-child{
+        margin-top: 600px;
+      }
+      }
+    }
     h5 {
       font-size: 28px;
       font-family: "Reg";

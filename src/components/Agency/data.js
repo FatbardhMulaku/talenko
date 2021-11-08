@@ -46,45 +46,45 @@ export const TeamData = [
             name: "Valon Ajvazi",
             mail:"Valon",
             title: "CEO",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
+            desc: "He is good at hiring talented people and then getting out of their way! "
         },
         {
             name: "Eris Visoka",
             mail:"Eris",
             title: "Head of Design",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
+            desc: "Eris likes black, and he likes cats as well, but his cat is brown so this puts us in doubts."
         },
         {
             name: "Endrit Ahmeti",
             mail:"Endrit",
             title: "Ui/Ux  Designer",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
+            desc: "If you can hear the music out of the office walls, just know it is him."
         },
-        {
+       /*  {
             name: "Albin Musliu",
             mail:"Albin",
             title: "Head of Development",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
-        },
+        }, */
     ],
     [
         {
             name: "Fatos Ajvazi",
             mail:"Fatos",
             title: "Project Manager",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
+            desc: "He saves his best move for the last one, in life and in billiards! "
         },
         {
             name: "Pranvera Saliu",
             mail:"Pranvera",
             title: "Web Developer",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
+            desc: "If she knew a spider is climbing up her hair, she would be screaming! "
         },
         {
             name: "Vineta Leci",
             mail:"Vineta",
             title: "Ui/Ux  Designer",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
+            desc: "If I do something I either hit it on the bullseye or in your eye, there’s no in between. "
         },
     ]
 ];
