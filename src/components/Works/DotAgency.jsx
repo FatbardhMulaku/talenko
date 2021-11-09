@@ -11,7 +11,7 @@ function DotAgency() {
     }
 
     return (
-        <div onClick={onClick} className="Work-DotAgency container flex flex-col md:flex-row my-48 px-5 md:px-0 cursor-pointer">
+        <div onClick={onClick} className="Work-DotAgency container flex flex-col md:flex-row py-20 md:my-48 px-5 md:px-0 cursor-pointer">
             <div className="w-100 md:w-1/2 flex px-4 md:px-0 my-auto mt-24">
                 <Fade top big>
                     <h3 className="my-auto pr-3 md:pr-8 text-3xl md:text-4xl text-yellow-600">01/</h3>
@@ -22,9 +22,10 @@ function DotAgency() {
                     </Fade>
                     <Fade bottom big>
                         <p className="text-left text-lg md:text-2xl text-gray-400">
-                            Lorem ipsum dolor sit amet, consectetur madi piscing sed <br />
-                            do eiusmod tempor incididunt ut labore et dolore ips.<br />
-                            ncididunt ut labore et dolore ips.<br />
+                            Dot Agency is a web-design & development studio operating in Switzerland. 
+                            Our task was therefore to deliver a highly customized and fully integrated web
+                            development solution at a competitive cost, by bringing brand awareness, web-
+                            designing  and customer interaction.
                         </p>
                     </Fade>
                 </div>

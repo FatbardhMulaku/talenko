@@ -4,6 +4,7 @@ import Diver from '../Shared/Divider'
 import Fade from 'react-reveal/Fade';
 /* import ServiceSlider from './ServiceSlider'; */
 import ServiceSlider2 from './ServiceSlider2';
+import { animateScroll as scroll } from 'react-scroll'
 
 function Service() {
     return (
@@ -20,12 +21,15 @@ function Service() {
                             a wide range of needs</h2>
                     </Fade>
                     <Fade right className="my-auto">
+                    <div onClick={() => scroll.scrollToTop()}>
                         <Buttons
                             name="See All"
                             link="/Services"
                             margin="auto 10px"
                             hover="CHOOSE YOUR SERVICE"
+                            offset={-3000}
                         />
+                     </div>
                     </Fade>
                 </div>
 

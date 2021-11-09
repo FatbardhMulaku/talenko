@@ -2,6 +2,7 @@ import React from 'react'
 import Buttons from '../Shared/Button/Buttons'
 import Diver from '../Shared/Divider'
 import Fade from 'react-reveal/Fade';
+import { animateScroll as scroll } from 'react-scroll'
 
 function Work() {
     return (
@@ -14,13 +15,16 @@ function Work() {
                 </div>
                 <Diver width="100%" color="white" />
                 <div className="HomeWork__lover flex flex-col justify-center md:flex-row md:justify-between mt-4 mt-10">
-                    <Fade left  >
-                        <Buttons
-                            name="See All"
-                            hover="SEE OUR PROJECTS"
-                            link="/Work"
-                            margin="auto 10px"
-                        />
+                    <Fade left >
+                        <div onClick={() => scroll.scrollToTop()}>
+                            <Buttons
+                                name="See All"
+                                hover="SEE OUR PROJECTS"
+                                link="/Work"
+                                margin="auto 10px"
+                            /> 
+                        </div>
+
                     </Fade>
                     <Fade right className="my-auto">
 

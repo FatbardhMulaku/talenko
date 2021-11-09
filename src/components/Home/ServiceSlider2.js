@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ServiceData } from "../Services/data";
 import ScrollContainer from 'react-indiana-drag-scroll'
-import { Tooltip } from "@material-ui/core"
+/* import { Tooltip } from "@material-ui/core" */
 import Fade from 'react-reveal/Fade';
 
 export class ServiceSlider2 extends Component {
@@ -14,7 +14,7 @@ export class ServiceSlider2 extends Component {
                             {ServiceData.map((item, i) => {
                                 return (
                                     <div key={i} className={`ServiceSliderBG${i + 1}`}>
-                                        <Tooltip title="Drag" followCursor={true}>
+                                        {/* <Tooltip title="Drag" followCursor={true}> */}
                                             <div className={`ServiceSlider__box flex flex-col`}>
                                                 <div className="flex justify-between">
                                                     <h4>{item.title}</h4>
@@ -22,7 +22,7 @@ export class ServiceSlider2 extends Component {
                                                 </div>
                                                 <p>{item.desc}</p>
                                             </div>
-                                        </Tooltip>
+                                       {/*  </Tooltip> */}
                                     </div>
                                 )
                             })}

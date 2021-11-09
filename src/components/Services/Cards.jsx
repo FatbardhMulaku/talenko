@@ -13,9 +13,9 @@ function Cards() {
 
                         <div className={`flex Service-Cards__row${idx + 1}`}>
                             <Fade bottom cascade>
-                                <div className="w-100 md:w-2/5 py-40 my-auto px-0 md:px-16">
+                                <div className="w-100 md:w-2/5 py-6 md:py-40 my-auto px-0 md:px-16">
 
-                                    <h2 className="text-2xl md:text-5xl mb-8">{item.title}</h2>
+                                    <h2 className="text-2xl md:text-5xl mb-2 md:mb-8">{item.title}</h2>
 
                                     <p className="text-base md:text-lg text-gray-400 mb-4">{item.desc}</p>
 

@@ -46,7 +46,7 @@ export class FullSlider extends Component {
                                         <div className="flex mb-12 md:mb-32">
                                             <p>0{i + 1}</p>
                                             <div style={{ width: "160px" }} className="border-b-2 border-gray-700 my-auto mx-3">
-                                                <div style={{ width: `${(i + 1) * 40}px`, position:"absolute",top:"81px" }} className="text-white border-b-2 border-white h-1 my-auto  " />
+                                                <div style={{ width: `${(i + 1) * 40}px`, position:"absolute",top:"81px" }} className="text-white border-b-2 border-white h-1 my-auto  hidden" />
                                             </div> 
                                             <p>0{FullSliderdata.length}</p>
                                         </div>

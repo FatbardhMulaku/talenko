@@ -26,7 +26,8 @@
     &__img4,
     &__img5,
     &__img6,
-    &__img7 {
+    &__img7,
+    &__img8 {
       width: 600px;
       height: 750px;
       margin: 150px 10px;
@@ -57,6 +58,9 @@
     &__img3 {
       background-image: url("../../assets/Agency/photo3.png");
     }
+    &__img4 {
+      background-image: url("../../assets/Agency/zana.png");
+    }
     &__img5 {
       background-image: url("../../assets/Agency/photo5.png");
     }
@@ -65,6 +69,9 @@
     }
     &__img7 {
       background-image: url("../../assets/Agency/photo7.png");
+    }
+    &__img8 {
+      background-image: url("../../assets/Agency/vesa.png");
     }
     h6 {
       font-size: 20px;
@@ -100,6 +107,9 @@
         // hapsira permi edhe perfuni kolones 2
       &>div > div:first-child{
         margin-top: 600px;
+        @include respond(md){
+          margin-top: 50px;
+        }
       }
       }
     }
@@ -175,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.226);
     &>div{
 

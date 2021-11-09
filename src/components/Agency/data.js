@@ -60,12 +60,12 @@ export const TeamData = [
             title: "UI/UX Designer",
             desc: "If you can hear the music out of the office walls, just know it is him."
         },
-       /*  {
-            name: "Albin Musliu",
-            mail:"Albin",
-            title: "Head of Development",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor a aliqua. "
-        }, */
+        {
+            name: "Zana Pantina",
+            mail:"Zana",
+            title: "UI/UX Designer",
+            desc: "Every girls dream is her reality. She eats and doesn't get fat!"
+        },
     ],
     [
         {
@@ -85,6 +85,12 @@ export const TeamData = [
             mail:"Vineta",
             title: "UI/UX Designer",
             desc: "If I do something I either hit it on the bullseye or in your eye, there’s no in between. "
+        },
+        {
+            name: "Vesa Vuciterna",
+            mail:"Vesa",
+            title: "UI/UX Designer",
+            desc: "She loves animals more than people, that’s why she watches real-crime documentaries while eating popcorns."
         },
     ]
 ];

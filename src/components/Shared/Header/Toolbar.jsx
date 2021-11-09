@@ -7,7 +7,7 @@ import Logo from "../Logo/Logo";
 /* import DrawerToggle from "./DrawerToggle"; */
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 /* import Icon from "./Icon"; */
-/* import "./Toolbar.css"; */
+import { useHistory } from "react-router-dom";
 import { ReactComponent as Btn } from "../../../assets/Home/btn_head.svg";
 
 
@@ -66,6 +66,11 @@ const Toolbar = (props) => {
     target: windowp ? window() : undefined,
   });
 
+  const history = useHistory();
+  const onClick = () => {
+      history.push('Info');
+  }
+
   return (
     <AppBar className={trigger ? classes.box2 : classes.box1}>
       <Container className={classes.appBar}>
@@ -102,7 +107,7 @@ const Toolbar = (props) => {
 
           </div>
                   
-          <Btn className={trigger ? "hidden":`Header__btn Header__btn${props.pageColor}`} />
+          <Btn onClick={() =>  history.push("/Contact")} className={trigger ? "hidden":`Header__btn Header__btn${props.pageColor}`} />
 
         </div>
 

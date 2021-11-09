@@ -7,7 +7,7 @@ function Service() {
     return (
         <div className="Agency__Service container py-16 px-3 md:px-0">
             <div className="flex mb-6"><div className="Home__Service--icon BG" />
-                <h5 className="mt-2 text-lg md:text-2xl">SERVICES</h5>
+                <h5 className="mt-2 text-lg md:text-2xl">VALUES</h5>
             </div>
             <Diver width="100%" color="white" />
 
